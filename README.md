@@ -2,7 +2,7 @@
 
 ## Intention
 
-This is the Alarm system implementation for Lab 2 of Media Processing course
+This is the Alarm System implementation for Lab 2 of Media Processing course
 
 # TODO
 
@@ -15,4 +15,4 @@ This is the Alarm system implementation for Lab 2 of Media Processing course
   * [x] Implement MotionSensor
   * [x] Implement ToxicSensor
 * [x] Create documentation
-* [ ] Reorganize project structure
+* [x] Reorganize project structure

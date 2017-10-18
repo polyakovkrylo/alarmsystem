@@ -15,8 +15,8 @@
 #include <iostream>
 #include <string>
 
-#include "alarmcomponent.h"
-#include "alarmstrategyowner.h"
+#include "alarm-composite/alarmcomponent.h"
+#include "alarm-strategy/alarmstrategyowner.h"
 
 /*!
  * \defgroup AlarmSensors

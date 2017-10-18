@@ -4,16 +4,30 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += main.cpp \
-    abstractsensor.cpp \
-    alarmcomponent.cpp \
-    alarmcomponentgroup.cpp \
-    alarmstrategy.cpp \
-    alarmstrategyowner.cpp \
-    callpolice.cpp \
-    callfiremen.cpp \
-    smokesensor.cpp \
-    motionsensor.cpp \
-    toxicsensor.cpp \
+    alarm-composite/alarmcomponent.cpp \
+    alarm-composite/alarmcomponentgroup.cpp \
+    alarm-sensor/abstractsensor.cpp \
+    alarm-sensor/smokesensor.cpp \
+    alarm-sensor/motionsensor.cpp \
+    alarm-sensor/toxicsensor.cpp \
+    alarm-strategy/alarmstrategy.cpp \
+    alarm-strategy/alarmstrategyowner.cpp \
+    alarm-strategy/callpolice.cpp \
+    alarm-strategy/callfiremen.cpp \
+
+HEADERS += \
+    alarm-composite/alarmcomponent.h \
+    alarm-composite/alarmcomponentgroup.h \
+    alarm-sensor/abstractsensor.h \
+    alarm-sensor/smokesensor.h \
+    alarm-sensor/motionsensor.h \
+    alarm-sensor/toxicsensor.h \
+    alarm-strategy/alarmstrategy.h \
+    alarm-strategy/alarmstrategyowner.h \
+    alarm-strategy/callpolice.h \
+    alarm-strategy/callfiremen.h \
+
+
 
 DISTFILES += \
     README.md \
@@ -378,15 +392,3 @@ DISTFILES += \
     docs/latex/refman.tex \
     docs/latex/smokesensor_8h.tex \
     docs/latex/toxicsensor_8h.tex
-
-HEADERS += \
-    abstractsensor.h \
-    alarmcomponent.h \
-    alarmcomponentgroup.h \
-    alarmstrategy.h \
-    alarmstrategyowner.h \
-    callpolice.h \
-    callfiremen.h \
-    smokesensor.h \
-    motionsensor.h \
-    toxicsensor.h \
