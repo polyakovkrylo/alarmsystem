@@ -1,19 +1,27 @@
-#include "alarmcomponent.h"
 #include "alarmcomponentgroup.h"
+#include "alarmstrategyowner.h"
 
 using namespace std;
 
 int main()
 {
-    AlarmComponentGroup room("Room 1");
+    AlarmStrategyOwner owner;
 
-    auto comp1 = std::make_shared<AlarmComponent>("Leaf 1");
-    auto comp2 = std::make_shared<AlarmComponent>("Leaf 2");
+    auto strat1 = std::make_shared<AlarmStrategy>("Strategy 1");
+    auto strat2 = std::make_shared<AlarmStrategy>("Strategy 2");
 
-    room.add(comp1);
-    room.add(comp2);
+    owner.addStrategy(strat1);
+    owner.addStrategy(strat2);
 
-    room.printInfo();
+    owner.activateStrategies();
+
+    auto strat3 = std::make_shared<AlarmStrategy>("Strategy 3");
+
+
+    owner.removeStrategy(strat1);
+    owner.addStrategy(strat3);
+
+    owner.deactivateStrategies();
 
     return 0;
 }

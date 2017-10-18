@@ -16,7 +16,7 @@ AlarmComponentGroup::~AlarmComponentGroup()
 void AlarmComponentGroup::activate()
 {
     AlarmComponent::activate();
-    for(SPtr child : children_) {
+    for(SPtr& child : children_) {
         child->activate();
     }
 }
@@ -24,7 +24,7 @@ void AlarmComponentGroup::activate()
 void AlarmComponentGroup::deactivate()
 {
     AlarmComponent::activate();
-    for(SPtr child : children_) {
+    for(SPtr &child : children_) {
         child->deactivate();
     }
 }
@@ -32,7 +32,7 @@ void AlarmComponentGroup::deactivate()
 void AlarmComponentGroup::printInfo()
 {
     AlarmComponent::printInfo();
-    for(SPtr child : children_) {
+    for(SPtr &child : children_) {
         child->printInfo();
     }
 }

@@ -5,11 +5,15 @@ CONFIG -= qt
 
 SOURCES += main.cpp \
     alarmcomponent.cpp \
-    alarmcomponentgroup.cpp
+    alarmcomponentgroup.cpp \
+    alarmstrategy.cpp \
+    alarmstrategyowner.cpp
 
 DISTFILES += \
     README.md
 
 HEADERS += \
     alarmcomponent.h \
-    alarmcomponentgroup.h
+    alarmcomponentgroup.h \
+    alarmstrategy.h \
+    alarmstrategyowner.h

@@ -12,15 +12,15 @@ class AlarmComponentGroup : public AlarmComponent
 public:
     typedef std::shared_ptr<AlarmComponent> SPtr;
 
-    AlarmComponentGroup(std::string id = "unknown group");
+    explicit AlarmComponentGroup(std::string id = "unknown group");
     virtual ~AlarmComponentGroup() override;
 
     virtual void activate() final override;
     virtual void deactivate() final override;
     virtual void printInfo() override;
 
-    void add(const SPtr& sptr);
-    void remove(const SPtr& sptr);
+    void add(const SPtr &sptr);
+    void remove(const SPtr &sptr);
 
 private:
     std::list<SPtr> children_;
