@@ -16,11 +16,11 @@ AlarmStrategy::~AlarmStrategy()
 
 void AlarmStrategy::activate()
 {
-    cout << name << " was activated" << endl;
+    cout << name << " has been activated" << endl;
 }
 
 void AlarmStrategy::deactivate()
 {
-    cout << name << " was deactivated" << endl;
+    cout << name << " has been deactivated" << endl;
 }
 

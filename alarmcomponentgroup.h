@@ -12,7 +12,7 @@ class AlarmComponentGroup : public AlarmComponent
 public:
     typedef std::shared_ptr<AlarmComponent> SPtr;
 
-    explicit AlarmComponentGroup(std::string id = "unknown group");
+    explicit AlarmComponentGroup(std::string id_ = "unknown group");
     virtual ~AlarmComponentGroup() override;
 
     virtual void activate() final override;

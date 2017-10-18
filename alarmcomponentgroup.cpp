@@ -23,7 +23,7 @@ void AlarmComponentGroup::activate()
 
 void AlarmComponentGroup::deactivate()
 {
-    AlarmComponent::activate();
+    AlarmComponent::deactivate();
     for(SPtr &child : children_) {
         child->deactivate();
     }

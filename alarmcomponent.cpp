@@ -5,7 +5,7 @@ using std::cout;
 using std::endl;
 
 AlarmComponent::AlarmComponent(std::string id) :
-    id{id}
+    id_{id}
 {
 
 }
@@ -17,20 +17,20 @@ AlarmComponent::~AlarmComponent()
 
 void AlarmComponent::activate()
 {
-    cout << id << "was activated" << endl;
+    cout << id_ << " has been activated" << endl;
 }
 
 void AlarmComponent::deactivate()
 {
-    cout << id << "was deactivated" << endl;
+    cout << id_ << " has been deactivated" << endl;
 }
 
 void AlarmComponent::printInfo()
 {
-    cout << id << endl;
+    cout << id_ << endl;
 }
 
 std::string AlarmComponent::getId()
 {
-    return id;
+    return id_;
 }

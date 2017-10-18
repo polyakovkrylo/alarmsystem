@@ -8,7 +8,7 @@
 class AlarmComponent
 {
 public:
-    explicit AlarmComponent(std::string id);
+    explicit AlarmComponent(std::string id_);
     virtual ~AlarmComponent();
 
 public:
@@ -19,7 +19,7 @@ public:
     std::string getId();
 
 protected:
-    std::string id;
+    std::string id_;
 };
 
 #endif // ALARMCOMPONENT_H

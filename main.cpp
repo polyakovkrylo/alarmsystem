@@ -1,27 +1,34 @@
 #include "alarmcomponentgroup.h"
-#include "alarmstrategyowner.h"
+#include "alarmsensor.h"
 
 using namespace std;
 
 int main()
 {
-    AlarmStrategyOwner owner;
+    AlarmComponentGroup room("Room 1");
+
+    auto sensor1 = std::make_shared<AlarmSensor>("Smoke sensor", "s1");
+    auto sensor2 = std::make_shared<AlarmSensor>("Smoke sensor", "s2");
 
     auto strat1 = std::make_shared<AlarmStrategy>("Strategy 1");
     auto strat2 = std::make_shared<AlarmStrategy>("Strategy 2");
-
-    owner.addStrategy(strat1);
-    owner.addStrategy(strat2);
-
-    owner.activateStrategies();
-
     auto strat3 = std::make_shared<AlarmStrategy>("Strategy 3");
 
+    room.add(sensor1);
+    room.add(sensor2);
 
-    owner.removeStrategy(strat1);
-    owner.addStrategy(strat3);
+    sensor1->addStrategy(strat1);
+    sensor1->addStrategy(strat2);
 
-    owner.deactivateStrategies();
+    sensor2->addStrategy(strat1);
+
+    room.activate();
+
+    sensor1->removeStrategy(strat1);
+    sensor1->addStrategy(strat3);
+
+    room.deactivate();
+
 
     return 0;
 }
