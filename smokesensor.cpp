@@ -13,8 +13,8 @@ SmokeSensor::~SmokeSensor()
 
 void SmokeSensor::update()
 {
-    int currentLevel = rand() % 31;
-    if(currentLevel > threshold_) {
+    int lev = rand() % 31;  // current level
+    if(lev > threshold_) {
         activate();
     }
 }

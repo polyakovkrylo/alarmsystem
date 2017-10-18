@@ -10,7 +10,10 @@
 class SmokeSensor : public AlarmSensor
 {
 public:
-    SmokeSensor(int threshold = 20, std::string id = "Unkown id", std::string vendor = "Unkown vendor");
+    SmokeSensor(int threshold = 20,
+                std::string id = "Unkown id",
+                std::string vendor = "Unkown vendor");
+
     virtual ~SmokeSensor() override;
 
     virtual void update() override;

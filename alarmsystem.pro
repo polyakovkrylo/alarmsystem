@@ -11,7 +11,9 @@ SOURCES += main.cpp \
     alarmsensor.cpp \
     callpolice.cpp \
     callfiremen.cpp \
-    smokesensor.cpp
+    smokesensor.cpp \
+    motionsensor.cpp \
+    toxicsensor.cpp
 
 DISTFILES += \
     README.md
@@ -24,4 +26,6 @@ HEADERS += \
     alarmsensor.h \
     callpolice.h \
     callfiremen.h \
-    smokesensor.h
+    smokesensor.h \
+    motionsensor.h \
+    toxicsensor.h
