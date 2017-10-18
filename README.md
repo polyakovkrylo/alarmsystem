@@ -11,3 +11,6 @@ This is the Alarm system implementation for Lab 2 of Media Processing course
 * [x] Implement AlarmSensor class
 * [x] Implement AlarmStrategy successors
 * [ ] Implement AlarmSensor successors
+  * [x] Implement SmokeSensor
+  * [ ] Implement MotionSensor
+  * [ ] Implement ToxicSensor

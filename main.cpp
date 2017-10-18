@@ -1,5 +1,5 @@
 #include "alarmcomponentgroup.h"
-#include "alarmsensor.h"
+#include "smokesensor.h"
 #include "callfiremen.h"
 #include "callpolice.h"
 
@@ -9,23 +9,17 @@ int main()
 {
     AlarmComponentGroup room("Room 1");
 
-    auto sensor1 = std::make_shared<AlarmSensor>("Smoke sensor", "s1");
-    auto sensor2 = std::make_shared<AlarmSensor>("Smoke sensor", "s2");
+    auto sensor1 = std::make_shared<SmokeSensor>();
 
     auto strat1 = std::make_shared<CallPolice>();
-    auto strat2 = std::make_shared<CallFiremen>();
 
     room.add(sensor1);
-    room.add(sensor2);
 
     sensor1->addStrategy(strat1);
-    sensor1->addStrategy(strat2);
 
-    sensor2->addStrategy(strat1);
-
-    room.activate();
-
-    room.deactivate();
+    for(int i = 0; i < 20; i++) {
+        sensor1->update();
+    }
 
 
     return 0;

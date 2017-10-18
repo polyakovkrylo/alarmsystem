@@ -10,7 +10,8 @@ SOURCES += main.cpp \
     alarmstrategyowner.cpp \
     alarmsensor.cpp \
     callpolice.cpp \
-    callfiremen.cpp
+    callfiremen.cpp \
+    smokesensor.cpp
 
 DISTFILES += \
     README.md
@@ -22,4 +23,5 @@ HEADERS += \
     alarmstrategyowner.h \
     alarmsensor.h \
     callpolice.h \
-    callfiremen.h
+    callfiremen.h \
+    smokesensor.h
