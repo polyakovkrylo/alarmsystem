@@ -12,6 +12,7 @@ AlarmStrategyOwner::~AlarmStrategyOwner()
 
 void AlarmStrategyOwner::activateStrategies()
 {
+    // actiavte each strategy in strategy list
     for(SPtr &strategy : strategies_) {
         strategy->activate();
     }
@@ -19,6 +20,7 @@ void AlarmStrategyOwner::activateStrategies()
 
 void AlarmStrategyOwner::deactivateStrategies()
 {
+    // deactiavte each strategy in strategy list
     for(SPtr &strategy : strategies_) {
         strategy->deactivate();
     }

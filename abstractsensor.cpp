@@ -1,34 +1,31 @@
-#include "alarmsensor.h"
+#include "abstractsensor.h"
 
 using std::cout;
 using std::endl;
 
 
-AlarmSensor::AlarmSensor(std::string id, std::string type, std::string vendor) :
+AbstractSensor::AbstractSensor(std::string id, std::string type, std::string vendor) :
     AlarmComponent(id), type_{type}, vendor_{vendor}
 {
 
 }
 
-AlarmSensor::~AlarmSensor()
+AbstractSensor::~AbstractSensor()
 {
 
 }
 
-void AlarmSensor::update()
+void AbstractSensor::activate()
 {
-    cout << "Sensor " << id_  << "has been updated";
-}
-
-void AlarmSensor::activate()
-{
+    // print sensor's info and activate strategies
     cout << "Sensor " << id_  << " of type " << type_
          << " has been activated" << endl;
     activateStrategies();
 }
 
-void AlarmSensor::deactivate()
+void AbstractSensor::deactivate()
 {
+    // print sensor's info and deactivate strategies
     cout << "Sensor " << id_  << " of type " << type_
          << " has been deactivated" << endl;
     deactivateStrategies();

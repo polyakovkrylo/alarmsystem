@@ -1,0 +1,9 @@
+<map id="alarmstrategy.h" name="alarmstrategy.h">
+<area shape="rect" id="node2" href="$alarmstrategyowner_8h.html" title="alarmstrategyowner.h" alt="" coords="117,80,263,107"/>
+<area shape="rect" id="node7" href="$callfiremen_8h.html" title="callfiremen.h" alt="" coords="287,80,383,107"/>
+<area shape="rect" id="node8" href="$callpolice_8h.html" title="callpolice.h" alt="" coords="408,80,495,107"/>
+<area shape="rect" id="node3" href="$abstractsensor_8h.html" title="abstractsensor.h" alt="" coords="131,155,249,181"/>
+<area shape="rect" id="node4" href="$smokesensor_8h.html" title="smokesensor.h" alt="" coords="5,229,116,256"/>
+<area shape="rect" id="node5" href="$toxicsensor_8h.html" title="toxicsensor.h" alt="" coords="140,229,240,256"/>
+<area shape="rect" id="node6" href="$motionsensor_8h.html" title="motionsensor.h" alt="" coords="264,229,375,256"/>
+</map>

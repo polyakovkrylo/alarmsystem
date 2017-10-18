@@ -1,0 +1,83 @@
+\hypertarget{classAlarmStrategyOwner}{}\section{Alarm\+Strategy\+Owner Class Reference}
+\label{classAlarmStrategyOwner}\index{Alarm\+Strategy\+Owner@{Alarm\+Strategy\+Owner}}
+
+
+Context class implementation of strategy pattern.  
+
+
+
+
+{\ttfamily \#include $<$alarmstrategyowner.\+h$>$}
+
+
+
+Inheritance diagram for Alarm\+Strategy\+Owner\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{classAlarmStrategyOwner__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classAlarmStrategy}{Alarm\+Strategy} $>$ {\bfseries S\+Ptr}\hypertarget{classAlarmStrategyOwner_aeebd31011e2a6d14a4492315ad15c5ee}{}\label{classAlarmStrategyOwner_aeebd31011e2a6d14a4492315ad15c5ee}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classAlarmStrategyOwner_a2e150fb66eda048ece19da4ebf3605cf}{activate\+Strategies} ()\hypertarget{classAlarmStrategyOwner_a2e150fb66eda048ece19da4ebf3605cf}{}\label{classAlarmStrategyOwner_a2e150fb66eda048ece19da4ebf3605cf}
+
+\begin{DoxyCompactList}\small\item\em Activate all strategies held by the instance. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmStrategyOwner_a24165674f81b7414ea7f49addf7afc0a}{deactivate\+Strategies} ()\hypertarget{classAlarmStrategyOwner_a24165674f81b7414ea7f49addf7afc0a}{}\label{classAlarmStrategyOwner_a24165674f81b7414ea7f49addf7afc0a}
+
+\begin{DoxyCompactList}\small\item\em Deactivate all strategies held by the instance. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmStrategyOwner_a38dde4dca444585387df6db6bf352349}{add\+Strategy} (const S\+Ptr \&strategy)
+\begin{DoxyCompactList}\small\item\em Add strategy to the context. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmStrategyOwner_a50ca40d662757f37fdb17194fdbb165a}{remove\+Strategy} (const S\+Ptr \&strategy)
+\begin{DoxyCompactList}\small\item\em Remove strategy from the context. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Context class implementation of strategy pattern. 
+
+\subsection{Member Function Documentation}
+\index{Alarm\+Strategy\+Owner@{Alarm\+Strategy\+Owner}!add\+Strategy@{add\+Strategy}}
+\index{add\+Strategy@{add\+Strategy}!Alarm\+Strategy\+Owner@{Alarm\+Strategy\+Owner}}
+\subsubsection[{\texorpdfstring{add\+Strategy(const S\+Ptr \&strategy)}{addStrategy(const SPtr &strategy)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Strategy\+Owner\+::add\+Strategy (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{strategy}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmStrategyOwner_a38dde4dca444585387df6db6bf352349}{}\label{classAlarmStrategyOwner_a38dde4dca444585387df6db6bf352349}
+
+
+Add strategy to the context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & strategy to be added \\
+\hline
+\end{DoxyParams}
+\index{Alarm\+Strategy\+Owner@{Alarm\+Strategy\+Owner}!remove\+Strategy@{remove\+Strategy}}
+\index{remove\+Strategy@{remove\+Strategy}!Alarm\+Strategy\+Owner@{Alarm\+Strategy\+Owner}}
+\subsubsection[{\texorpdfstring{remove\+Strategy(const S\+Ptr \&strategy)}{removeStrategy(const SPtr &strategy)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Strategy\+Owner\+::remove\+Strategy (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{strategy}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmStrategyOwner_a50ca40d662757f37fdb17194fdbb165a}{}\label{classAlarmStrategyOwner_a50ca40d662757f37fdb17194fdbb165a}
+
+
+Remove strategy from the context. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & to be removed \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{alarmstrategyowner_8h}{alarmstrategyowner.\+h}\item 
+alarmstrategyowner.\+cpp\end{DoxyCompactItemize}

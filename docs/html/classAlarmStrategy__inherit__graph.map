@@ -1,0 +1,4 @@
+<map id="AlarmStrategy" name="AlarmStrategy">
+<area shape="rect" id="node2" href="$classCallFiremen.html" title="Call firemen strategy class. " alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" href="$classCallPolice.html" title="Call police strategy class. " alt="" coords="121,80,203,107"/>
+</map>

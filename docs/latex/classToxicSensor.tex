@@ -1,0 +1,111 @@
+\hypertarget{classToxicSensor}{}\section{Toxic\+Sensor Class Reference}
+\label{classToxicSensor}\index{Toxic\+Sensor@{Toxic\+Sensor}}
+
+
+Toxic sensor class.  
+
+
+
+
+{\ttfamily \#include $<$toxicsensor.\+h$>$}
+
+
+
+Inheritance diagram for Toxic\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classToxicSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Toxic\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classToxicSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classToxicSensor_a140f14965ad9a7e71fc8a5a2ed2c919b}{Gas\+Type} \{ {\bfseries Chlorine}, 
+{\bfseries Bromine}
+ \}\begin{DoxyCompactList}\small\item\em The Gas\+Type enum. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classToxicSensor_a3d1f5f90e0561127e8ee3e5ee79c6473}{Toxic\+Sensor} (\hyperlink{classToxicSensor_a140f14965ad9a7e71fc8a5a2ed2c919b}{Gas\+Type} gas=Chlorine, int threshold=20, std\+::string id=\char`\"{}Unkown id\char`\"{}, std\+::string vendor=\char`\"{}Unkown vendor\char`\"{})
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classToxicSensor_ae4c58761cf2ef02e1d782f7f13cc56ff}{update} () override
+\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Toxic sensor class. 
+
+Dummy implementation of toxic sensor component. Intended for testing purposes. 
+
+\subsection{Member Enumeration Documentation}
+\index{Toxic\+Sensor@{Toxic\+Sensor}!Gas\+Type@{Gas\+Type}}
+\index{Gas\+Type@{Gas\+Type}!Toxic\+Sensor@{Toxic\+Sensor}}
+\subsubsection[{\texorpdfstring{Gas\+Type}{GasType}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf Toxic\+Sensor\+::\+Gas\+Type}}\hypertarget{classToxicSensor_a140f14965ad9a7e71fc8a5a2ed2c919b}{}\label{classToxicSensor_a140f14965ad9a7e71fc8a5a2ed2c919b}
+
+
+The Gas\+Type enum. 
+
+Specifies types of Gas to which toxic sensor can be sensitive 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Toxic\+Sensor@{Toxic\+Sensor}!Toxic\+Sensor@{Toxic\+Sensor}}
+\index{Toxic\+Sensor@{Toxic\+Sensor}!Toxic\+Sensor@{Toxic\+Sensor}}
+\subsubsection[{\texorpdfstring{Toxic\+Sensor(\+Gas\+Type gas=\+Chlorine, int threshold=20, std\+::string id=""Unkown id"", std\+::string vendor=""Unkown vendor"")}{ToxicSensor(GasType gas=Chlorine, int threshold=20, std::string id="Unkown id", std::string vendor="Unkown vendor")}}]{\setlength{\rightskip}{0pt plus 5cm}Toxic\+Sensor\+::\+Toxic\+Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf Gas\+Type}}]{gas = {\ttfamily Chlorine}, }
+\item[{int}]{threshold = {\ttfamily 20}, }
+\item[{std\+::string}]{id = {\ttfamily \char`\"{}Unkown~id\char`\"{}}, }
+\item[{std\+::string}]{vendor = {\ttfamily \char`\"{}Unkown~vendor\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classToxicSensor_a3d1f5f90e0561127e8ee3e5ee79c6473}{}\label{classToxicSensor_a3d1f5f90e0561127e8ee3e5ee79c6473}
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gas} & type of gas being detected by the sensor \\
+\hline
+{\em threshold} & minimal value for activation \\
+\hline
+{\em id} & identificator of the sensor \\
+\hline
+{\em vendor} & vendor name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Toxic\+Sensor@{Toxic\+Sensor}!update@{update}}
+\index{update@{update}!Toxic\+Sensor@{Toxic\+Sensor}}
+\subsubsection[{\texorpdfstring{update() override}{update() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Toxic\+Sensor\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classToxicSensor_ae4c58761cf2ef02e1d782f7f13cc56ff}{}\label{classToxicSensor_ae4c58761cf2ef02e1d782f7f13cc56ff}
+
+
+Update of the current value. 
+
+Randomly defines current value of the signal and triggers the activation if the value higher than the threshold 
+
+Implements \hyperlink{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{Abstract\+Sensor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{toxicsensor_8h}{toxicsensor.\+h}\item 
+toxicsensor.\+cpp\end{DoxyCompactItemize}

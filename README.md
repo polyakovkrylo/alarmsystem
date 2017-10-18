@@ -14,4 +14,5 @@ This is the Alarm system implementation for Lab 2 of Media Processing course
   * [x] Implement SmokeSensor
   * [x] Implement MotionSensor
   * [x] Implement ToxicSensor
-* [ ] Create documentation
+* [x] Create documentation
+* [ ] Reorganize project structure

@@ -9,6 +9,11 @@ using namespace std;
 
 int main()
 {
+    // Testing funtion.
+    // Create one room with 3 sensors
+    // of different types, then apply
+    // strategies to them and update
+    // sensors' data few times.
     AlarmComponentGroup room("Room 1");
 
     auto smoke = std::make_shared<SmokeSensor>();

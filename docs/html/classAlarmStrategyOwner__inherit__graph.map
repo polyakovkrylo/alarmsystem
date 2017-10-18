@@ -1,0 +1,6 @@
+<map id="AlarmStrategyOwner" name="AlarmStrategyOwner">
+<area shape="rect" id="node2" href="$classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="129,80,241,107"/>
+<area shape="rect" id="node3" href="$classMotionSensor.html" title="Motion sensor class. " alt="" coords="5,155,108,181"/>
+<area shape="rect" id="node4" href="$classSmokeSensor.html" title="Smoke sensor class. " alt="" coords="133,155,237,181"/>
+<area shape="rect" id="node5" href="$classToxicSensor.html" title="Toxic sensor class. " alt="" coords="261,155,356,181"/>
+</map>

@@ -1,0 +1,91 @@
+\hypertarget{classSmokeSensor}{}\section{Smoke\+Sensor Class Reference}
+\label{classSmokeSensor}\index{Smoke\+Sensor@{Smoke\+Sensor}}
+
+
+Smoke sensor class.  
+
+
+
+
+{\ttfamily \#include $<$smokesensor.\+h$>$}
+
+
+
+Inheritance diagram for Smoke\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classSmokeSensor__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Smoke\+Sensor\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classSmokeSensor__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classSmokeSensor_a0a8061f510440bd20f6ca7238b23516c}{Smoke\+Sensor} (int threshold=20, std\+::string id=\char`\"{}Unkown id\char`\"{}, std\+::string vendor=\char`\"{}Unkown vendor\char`\"{})
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classSmokeSensor_a31bc900b0d1c5c893f8555fdcbe4266b}{update} () override
+\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Smoke sensor class. 
+
+Dummy implementation of smoke sensor component. Intended for testing purposes. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Smoke\+Sensor@{Smoke\+Sensor}!Smoke\+Sensor@{Smoke\+Sensor}}
+\index{Smoke\+Sensor@{Smoke\+Sensor}!Smoke\+Sensor@{Smoke\+Sensor}}
+\subsubsection[{\texorpdfstring{Smoke\+Sensor(int threshold=20, std\+::string id=""Unkown id"", std\+::string vendor=""Unkown vendor"")}{SmokeSensor(int threshold=20, std::string id="Unkown id", std::string vendor="Unkown vendor")}}]{\setlength{\rightskip}{0pt plus 5cm}Smoke\+Sensor\+::\+Smoke\+Sensor (
+\begin{DoxyParamCaption}
+\item[{int}]{threshold = {\ttfamily 20}, }
+\item[{std\+::string}]{id = {\ttfamily \char`\"{}Unkown~id\char`\"{}}, }
+\item[{std\+::string}]{vendor = {\ttfamily \char`\"{}Unkown~vendor\char`\"{}}}
+\end{DoxyParamCaption}
+)}\hypertarget{classSmokeSensor_a0a8061f510440bd20f6ca7238b23516c}{}\label{classSmokeSensor_a0a8061f510440bd20f6ca7238b23516c}
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em threshold} & minimal value for activation \\
+\hline
+{\em id} & identificator of the sensor \\
+\hline
+{\em vendor} & vendor name \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Smoke\+Sensor@{Smoke\+Sensor}!update@{update}}
+\index{update@{update}!Smoke\+Sensor@{Smoke\+Sensor}}
+\subsubsection[{\texorpdfstring{update() override}{update() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Smoke\+Sensor\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classSmokeSensor_a31bc900b0d1c5c893f8555fdcbe4266b}{}\label{classSmokeSensor_a31bc900b0d1c5c893f8555fdcbe4266b}
+
+
+Update of the current value. 
+
+Randomly defines current value of the signal and triggers the activation if the value higher than the threshold 
+
+Implements \hyperlink{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{Abstract\+Sensor}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{smokesensor_8h}{smokesensor.\+h}\item 
+smokesensor.\+cpp\end{DoxyCompactItemize}

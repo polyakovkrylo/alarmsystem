@@ -1,0 +1,145 @@
+\hypertarget{classAlarmComponentGroup}{}\section{Alarm\+Component\+Group Class Reference}
+\label{classAlarmComponentGroup}\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+
+
+Group component class of composite structure.  
+
+
+
+
+{\ttfamily \#include $<$alarmcomponentgroup.\+h$>$}
+
+
+
+Inheritance diagram for Alarm\+Component\+Group\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classAlarmComponentGroup__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Alarm\+Component\+Group\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{classAlarmComponentGroup__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classAlarmComponent}{Alarm\+Component} $>$ {\bfseries S\+Ptr}\hypertarget{classAlarmComponentGroup_a007ed91b5a3919ad1b4a76350d3f6774}{}\label{classAlarmComponentGroup_a007ed91b5a3919ad1b4a76350d3f6774}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlarmComponentGroup_af999ab1dac77f573df01fb400ec5d044}{Alarm\+Component\+Group} (std\+::string id=\char`\"{}unknown group\char`\"{})
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAlarmComponentGroup_ac67076993e9068dc15e8d39af29698a4}{activate} () finaloverride
+\begin{DoxyCompactList}\small\item\em Activation of the component group. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAlarmComponentGroup_a673cebdc7e32c522af0e7435786ea118}{deactivate} () finaloverride
+\begin{DoxyCompactList}\small\item\em Dectivation of the component group. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAlarmComponentGroup_a07b07cb3f5b41360e3aaf83b9d0938b1}{print\+Info} () override\hypertarget{classAlarmComponentGroup_a07b07cb3f5b41360e3aaf83b9d0938b1}{}\label{classAlarmComponentGroup_a07b07cb3f5b41360e3aaf83b9d0938b1}
+
+\begin{DoxyCompactList}\small\item\em Print info about the group Print info about the group, including info about each component inside the group. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmComponentGroup_a8e6775dd15144e3a09396cfd5592779c}{add} (const S\+Ptr \&sptr)
+\begin{DoxyCompactList}\small\item\em Add component to the group. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmComponentGroup_a39378037a74da6477fb01f2965fe67da}{remove} (const S\+Ptr \&sptr)
+\begin{DoxyCompactList}\small\item\em Remove component from the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Group component class of composite structure. 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{Alarm\+Component\+Group(std\+::string id=""unknown group"")}{AlarmComponentGroup(std::string id="unknown group")}}]{\setlength{\rightskip}{0pt plus 5cm}Alarm\+Component\+Group\+::\+Alarm\+Component\+Group (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{id = {\ttfamily \char`\"{}unknown~group\char`\"{}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\hypertarget{classAlarmComponentGroup_af999ab1dac77f573df01fb400ec5d044}{}\label{classAlarmComponentGroup_af999ab1dac77f573df01fb400ec5d044}
+
+
+Class constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & identificator of the component \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!activate@{activate}}
+\index{activate@{activate}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{activate() finaloverride}{activate() finaloverride}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::activate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classAlarmComponentGroup_ac67076993e9068dc15e8d39af29698a4}{}\label{classAlarmComponentGroup_ac67076993e9068dc15e8d39af29698a4}
+
+
+Activation of the component group. 
+
+Print message with id of the group and ativate each component in the group 
+
+Reimplemented from \hyperlink{classAlarmComponent_ab2acf6b580efe04bd617580ecb7323f1}{Alarm\+Component}.
+
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!add@{add}}
+\index{add@{add}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{add(const S\+Ptr \&sptr)}{add(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::add (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{sptr}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmComponentGroup_a8e6775dd15144e3a09396cfd5592779c}{}\label{classAlarmComponentGroup_a8e6775dd15144e3a09396cfd5592779c}
+
+
+Add component to the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sptr} & pointer to the component \\
+\hline
+\end{DoxyParams}
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!deactivate@{deactivate}}
+\index{deactivate@{deactivate}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{deactivate() finaloverride}{deactivate() finaloverride}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::deactivate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [final]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classAlarmComponentGroup_a673cebdc7e32c522af0e7435786ea118}{}\label{classAlarmComponentGroup_a673cebdc7e32c522af0e7435786ea118}
+
+
+Dectivation of the component group. 
+
+Print message with id of the group and deativate each component in the group 
+
+Reimplemented from \hyperlink{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}{Alarm\+Component}.
+
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!remove@{remove}}
+\index{remove@{remove}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{remove(const S\+Ptr \&sptr)}{remove(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::remove (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{sptr}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmComponentGroup_a39378037a74da6477fb01f2965fe67da}{}\label{classAlarmComponentGroup_a39378037a74da6477fb01f2965fe67da}
+
+
+Remove component from the group. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sptr} & pointer to the component \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{alarmcomponentgroup_8h}{alarmcomponentgroup.\+h}\item 
+alarmcomponentgroup.\+cpp\end{DoxyCompactItemize}
