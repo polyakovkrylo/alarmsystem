@@ -8,14 +8,14 @@
 class AlarmStrategy
 {
 public:
-    explicit AlarmStrategy(std::string name = "unknown strategy");
+    explicit AlarmStrategy(std::string name_ = "unknown strategy");
     virtual ~AlarmStrategy();
 
     virtual void activate();
     virtual void deactivate();
 
 private:
-    std::string name;
+    std::string name_;
 };
 
 #endif // ALARMSTRATEGY_H

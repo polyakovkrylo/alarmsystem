@@ -15,6 +15,11 @@ AlarmSensor::~AlarmSensor()
 
 }
 
+void AlarmSensor::update()
+{
+    cout << "Sensor " << id_  << "has been updated";
+}
+
 void AlarmSensor::activate()
 {
     cout << "Sensor " << id_  << " of type " << type_

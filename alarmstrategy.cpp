@@ -4,7 +4,7 @@ using std::cout;
 using std::endl;
 
 AlarmStrategy::AlarmStrategy(std::string name) :
-    name{name}
+    name_{name}
 {
 
 }
@@ -16,11 +16,11 @@ AlarmStrategy::~AlarmStrategy()
 
 void AlarmStrategy::activate()
 {
-    cout << name << " has been activated" << endl;
+    cout << name_ << " has been activated" << endl;
 }
 
 void AlarmStrategy::deactivate()
 {
-    cout << name << " has been deactivated" << endl;
+    cout << name_ << " has been deactivated" << endl;
 }
 

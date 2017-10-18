@@ -13,6 +13,8 @@ public:
     explicit AlarmSensor(std::string id = "Unknown id", std::string type = "Unknown type", std::string vendor = "Unknown vendor");
     virtual ~AlarmSensor() override;
 
+    virtual void update();
+
     virtual void activate();
     virtual void deactivate();
 

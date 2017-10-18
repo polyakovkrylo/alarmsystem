@@ -8,7 +8,9 @@ SOURCES += main.cpp \
     alarmcomponentgroup.cpp \
     alarmstrategy.cpp \
     alarmstrategyowner.cpp \
-    alarmsensor.cpp
+    alarmsensor.cpp \
+    callpolice.cpp \
+    callfiremen.cpp
 
 DISTFILES += \
     README.md
@@ -18,4 +20,6 @@ HEADERS += \
     alarmcomponentgroup.h \
     alarmstrategy.h \
     alarmstrategyowner.h \
-    alarmsensor.h
+    alarmsensor.h \
+    callpolice.h \
+    callfiremen.h
