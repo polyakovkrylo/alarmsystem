@@ -2,8 +2,9 @@
 
 using std::cout;
 using std::endl;
+using std::string;
 
-AlarmStrategy::AlarmStrategy(std::string name) :
+AlarmStrategy::AlarmStrategy(string name) :
     name_{name}
 {
 

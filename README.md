@@ -51,3 +51,11 @@ strategy. Context is implemented in
   * [x] Implement ToxicSensor
 * [x] Create documentation
 * [x] Reorganize project structure
+* [x] Implement operators
+  * [x] Implement operator++
+  * [x] Implement operator--
+  * [x] Implement operator<< for each type of sensor
+* [ ] Add activation flag to AbstractSensor
+* [ ] Implement Observer structure
+* [ ] Parent attribute for AlarmComponent
+* [ ] Sorting and search algorithms

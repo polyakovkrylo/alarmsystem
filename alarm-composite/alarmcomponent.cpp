@@ -1,10 +1,10 @@
 #include "alarmcomponent.h"
 
-
 using std::cout;
 using std::endl;
+using std::string;
 
-AlarmComponent::AlarmComponent(std::string id) :
+AlarmComponent::AlarmComponent(string id) :
     id_{id}
 {
 
@@ -28,9 +28,4 @@ void AlarmComponent::deactivate()
 void AlarmComponent::printInfo()
 {
     cout << id_ << endl;
-}
-
-std::string AlarmComponent::getId()
-{
-    return id_;
 }

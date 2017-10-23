@@ -14,6 +14,8 @@
 
 #include <iostream>
 #include <string>
+#include <memory>
+#include <sstream>
 
 #include "alarm-composite/alarmcomponent.h"
 #include "alarm-strategy/alarmstrategyowner.h"
@@ -75,12 +77,17 @@ public:
     /*!
      * \brief Returns vendor name
      */
-    std::string getVendor();
+    std::string getVendor() const {return vendor_;}
 
     /*!
      * \brief Returns type of sensor
      */
-    std::string getType();
+    const std::string getType() const {return type_;}
+
+    /*!
+     * \brief String stream containing info about the sensor
+     */
+    virtual const std::string getInfo() const;
 
 private:
     /*!
@@ -93,5 +100,28 @@ private:
      */
     std::string vendor_;
 };
+
+/*!
+ * \brief Same as AbstractSensor::activate()
+ * \note This is an overloaded function
+ */
+inline void operator++(const std::shared_ptr<AbstractSensor> & rhs)
+{rhs->activate();}
+
+/*!
+ * \brief Same as AbstractSensor::deactivate()
+ * \note This is an overloaded function
+ */
+inline void operator--(const std::shared_ptr<AbstractSensor> & rhs)
+{rhs->deactivate();}
+
+// How to make it work uniformely for successors?
+/*!
+ * \ingroup AlarmSensor
+ * \brief Passes info about the sensor to the output stream
+ * \note This is an overloaded function
+ */
+std::ostream & operator<<(std::ostream & lhs,
+                          const std::shared_ptr<AbstractSensor> & rhs);
 
 #endif // ALARMSENSOR_H

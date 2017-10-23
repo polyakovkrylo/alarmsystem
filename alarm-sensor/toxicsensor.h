@@ -13,8 +13,6 @@
 #define TOXICSENSOR_H
 
 #include <cmath>
-#include <iostream>
-#include <string>
 
 #include "abstractsensor.h"
 
@@ -22,8 +20,8 @@
 /*!
  * \ingroup AlarmSensors
  *
- * \brief Toxic sensor class
  *
+ * \brief Toxic sensor class
  * Dummy implementation of toxic sensor component.
  * Intended for testing purposes.
  */
@@ -65,6 +63,21 @@ public:
      */
     virtual void update() override;
 
+    /*!
+     * \brief String stream containing info about the sensor
+     */
+    virtual const std::string getInfo() const override;
+
+    /*!
+     * \brief Returns string that contains name of gas
+     */
+    const std::string getGasType() const;
+
+    /*!
+     * \brief Returns current threshold value
+     */
+    int getThreshold() const {return threshold_;}
+
 private:
     /*!
      * \brief type of gas being detected by the sensor
@@ -77,5 +90,13 @@ private:
     int threshold_;
 };
 
+/*!
+ * \ingroup AlarmSensor
+ * \brief Passes info about the sensor to the output stream
+ * \note This is an overloaded function
+ */
+inline std::ostream & operator<<(std::ostream & lhs,
+                                 const std::shared_ptr<ToxicSensor> & rhs)
+{lhs<< rhs->getInfo();return lhs;}
 
 #endif // TOXICSENSOR_H

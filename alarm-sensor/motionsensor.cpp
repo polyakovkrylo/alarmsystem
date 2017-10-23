@@ -1,7 +1,13 @@
 #include "motionsensor.h"
 
+using std::string;
+using std::stringstream;
+using std::ostream;
+using std::endl;
+using std::shared_ptr;
+
 MotionSensor::MotionSensor(int minDistance, int maxDistance,
-                           std::string id, std::string vendor) :
+                           string id, string vendor) :
     AbstractSensor(id, "Motion sensor", vendor),
     minDistance_{minDistance}, maxDistance_{maxDistance}
 {
@@ -22,4 +28,13 @@ void MotionSensor::update()
     if((lev > minDistance_) && (lev < maxDistance_)) {
         activate();
     }
+}
+
+string const MotionSensor::getInfo() const
+{
+    stringstream result;
+    result << AbstractSensor::getInfo()
+           << "Minimal distance is " << getMinDistance() << " meters" << endl
+           << "Maximal distance is " << getMaxDistance() << " meters" << endl;
+    return result.str();
 }

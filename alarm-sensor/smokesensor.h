@@ -13,8 +13,6 @@
 #define SMOKESENSOR_H
 
 #include <cmath>
-#include <iostream>
-#include <string>
 
 #include "abstractsensor.h"
 
@@ -51,11 +49,31 @@ public:
      */
     virtual void update() override;
 
+    /*!
+     * \brief String stream containing info about the sensor
+     */
+    virtual const std::string getInfo() const override;
+
+    /*!
+     * \brief Threshold access function
+     * \return current threshold value
+     */
+    int getThreshold() const {return threshold_;}
+
 private:
     /*!
      * \brief minimal value for activation
      */
     int threshold_;
 };
+
+/*!
+ * \ingroup AlarmSensor
+ * \brief Passes info about the sensor to the output stream
+ * \note This is an overloaded function
+ */
+inline std::ostream & operator<<(std::ostream & lhs,
+                                 const std::shared_ptr<SmokeSensor> & rhs)
+{lhs<< rhs->getInfo();return lhs;}
 
 #endif // SMOKESENSOR_H

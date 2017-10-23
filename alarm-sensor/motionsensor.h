@@ -1,8 +1,3 @@
-#ifndef MOTIONSENSOR_H
-#define MOTIONSENSOR_H
-
-
-#include <cmath>
 /*!
  * \file motionsensor.h
  *
@@ -14,8 +9,10 @@
  * \author Brian Segers
  */
 
-#include <iostream>
-#include <string>
+#ifndef MOTIONSENSOR_H
+#define MOTIONSENSOR_H
+
+#include <cmath>
 
 #include "abstractsensor.h"
 
@@ -54,6 +51,21 @@ public:
      */
     virtual void update() override;
 
+    /*!
+     * \brief String stream containing info about the sensor
+     */
+    virtual const std::string getInfo() const override;
+
+    /*!
+     * \brief Returns mininal sensitive distance
+     */
+    int getMinDistance() const {return minDistance_;}
+
+    /*!
+     * \brief Returns maximal sensitive distance
+     */
+    int getMaxDistance() const {return maxDistance_;}
+
 private:
     /*!
      * \brief minimal distance of activation
@@ -66,5 +78,13 @@ private:
     int maxDistance_;
 };
 
+/*!
+ * \ingroup AlarmSensor
+ * \brief Passes info about the sensor to the output stream
+ * \note This is an overloaded function
+ */
+inline std::ostream & operator<<(std::ostream & lhs,
+                                 const std::shared_ptr<MotionSensor> & rhs)
+{lhs<< rhs->getInfo();return lhs;}
 
 #endif // MOTIONSENSOR_H

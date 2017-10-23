@@ -1,5 +1,11 @@
 #include "smokesensor.h"
 
+using std::endl;
+using std::ostream;
+using std::string;
+using std::stringstream;
+using std::shared_ptr;
+
 SmokeSensor::SmokeSensor(int threshold, std::string id, std::string vendor) :
     AbstractSensor(id, "Smoke sensor", vendor), threshold_{threshold}
 {
@@ -22,3 +28,10 @@ void SmokeSensor::update()
     }
 }
 
+const string SmokeSensor::getInfo() const
+{
+    stringstream result;
+    result << AbstractSensor::getInfo()
+           << "Threshold value is " << getThreshold() << endl;
+    return result.str();
+}

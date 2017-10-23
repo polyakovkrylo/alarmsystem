@@ -56,7 +56,7 @@ public:
     /*!
      * \brief Returns id of the component
      */
-    std::string getId();
+    std::string getId() const {return id_;}
 
 protected:
     /*!

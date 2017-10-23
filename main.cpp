@@ -1,11 +1,13 @@
-#include "alarmcomponentgroup.h"
-#include "smokesensor.h"
-#include "toxicsensor.h"
-#include "motionsensor.h"
-#include "callfiremen.h"
-#include "callpolice.h"
+#include "alarm-composite/alarmcomponentgroup.h"
+#include "alarm-sensor/smokesensor.h"
+#include "alarm-sensor/toxicsensor.h"
+#include "alarm-sensor/motionsensor.h"
+#include "alarm-strategy/callfiremen.h"
+#include "alarm-strategy/callpolice.h"
 
-using namespace std;
+using std::cout;
+using std::endl;
+using std::make_shared;
 
 int main()
 {
@@ -16,12 +18,12 @@ int main()
     // sensors' data few times.
     AlarmComponentGroup room("Room 1");
 
-    auto smoke = std::make_shared<SmokeSensor>();
-    auto toxic = std::make_shared<ToxicSensor>();
-    auto motion = std::make_shared<MotionSensor>();
+    auto smoke = make_shared<SmokeSensor>(10, "SM1", "Vendor1");
+    auto toxic = make_shared<ToxicSensor>(ToxicSensor::Chlorine, 10, "TOX1", "Vendor1");
+    auto motion = make_shared<MotionSensor>(10, 15, "MOT1", "Vendor2");
 
-    auto police = std::make_shared<CallPolice>();
-    auto fire = std::make_shared<CallFiremen>();
+    auto police = make_shared<CallPolice>();
+    auto fire = make_shared<CallFiremen>();
 
     room.add(smoke);
     room.add(toxic);
@@ -40,6 +42,14 @@ int main()
         motion->update();
     }
 
+    // Testing overloaded operators
+    cout << "Testing increment and decrement:" << endl;
+    ++smoke;
+    --smoke;
 
+    cout << "Testing operator<< : " << endl;
+    cout << smoke;
+    cout << motion;
+    cout << toxic;
     return 0;
 }

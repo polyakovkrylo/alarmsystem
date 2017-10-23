@@ -1,8 +1,9 @@
 #include "alarmcomponentgroup.h"
 
 using std::cout;
+using std::string;
 
-AlarmComponentGroup::AlarmComponentGroup(std::string id) :
+AlarmComponentGroup::AlarmComponentGroup(string id) :
     AlarmComponent(id)
 {
 
