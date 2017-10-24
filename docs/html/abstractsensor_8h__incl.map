@@ -1,5 +1,7 @@
 <map id="alarm&#45;sensor/abstractsensor.h" name="alarm&#45;sensor/abstractsensor.h">
-<area shape="rect" id="node6" href="$alarmcomponent_8h.html" title="alarm&#45;composite/alarmcomponent.h" alt="" coords="336,80,565,107"/>
-<area shape="rect" id="node7" href="$alarmstrategyowner_8h.html" title="alarm&#45;strategy/alarmstrategyowner.h" alt="" coords="26,80,261,107"/>
-<area shape="rect" id="node9" href="$alarmstrategy_8h.html" title="alarmstrategy.h" alt="" coords="136,155,248,181"/>
+<area shape="rect" id="node6" href="$alarmcomponent_8h.html" title="alarm&#45;composite/alarmcomponent.h" alt="" coords="106,80,336,107"/>
+<area shape="rect" id="node10" href="$alarmstrategyowner_8h.html" title="alarm&#45;strategy/alarmstrategyowner.h" alt="" coords="482,155,717,181"/>
+<area shape="rect" id="node7" href="$alarmobservable_8h.html" title="alarm&#45;observer/alarmobservable.h" alt="" coords="240,155,458,181"/>
+<area shape="rect" id="node9" href="$alarmobserver_8h.html" title="alarmobserver.h" alt="" coords="338,229,453,256"/>
+<area shape="rect" id="node11" href="$alarmstrategy_8h.html" title="alarmstrategy.h" alt="" coords="544,229,656,256"/>
 </map>

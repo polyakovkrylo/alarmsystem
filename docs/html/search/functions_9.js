@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['update',['update',['../classAbstractSensor.html#a8d0a1908c6aaf67fc7d781e54b49293b',1,'AbstractSensor::update()'],['../classMotionSensor.html#a8e71f20dc63f45669377e6efc4d7c6df',1,'MotionSensor::update()'],['../classSmokeSensor.html#a31bc900b0d1c5c893f8555fdcbe4266b',1,'SmokeSensor::update()'],['../classToxicSensor.html#ae4c58761cf2ef02e1d782f7f13cc56ff',1,'ToxicSensor::update()']]]
+  ['remove',['remove',['../classAlarmComponentGroup.html#a4e6c27c533e73d95fe622ca8ed89a9ae',1,'AlarmComponentGroup']]],
+  ['removeobserver',['removeObserver',['../classAlarmObservable.html#a76733a3271e053f105c428f3d878aa7e',1,'AlarmObservable']]],
+  ['removestrategy',['removeStrategy',['../classAlarmStrategyOwner.html#a50ca40d662757f37fdb17194fdbb165a',1,'AlarmStrategyOwner']]]
 ];

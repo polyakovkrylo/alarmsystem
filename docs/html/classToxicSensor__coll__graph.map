@@ -1,5 +1,6 @@
 <map id="ToxicSensor" name="ToxicSensor">
-<area shape="rect" id="node2" href="$classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="248,185,360,212"/>
-<area shape="rect" id="node3" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="125,109,248,136"/>
-<area shape="rect" id="node6" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="273,109,415,136"/>
+<area shape="rect" id="node2" href="$classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="317,185,429,212"/>
+<area shape="rect" id="node3" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="195,109,317,136"/>
+<area shape="rect" id="node4" href="$classAlarmObservable.html" title="Observable class of observer structure. " alt="" coords="5,13,128,39"/>
+<area shape="rect" id="node7" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="342,109,485,136"/>
 </map>

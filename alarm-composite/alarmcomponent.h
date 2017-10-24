@@ -15,6 +15,9 @@
 #include <string>
 #include <iostream>
 #include <memory>
+#include <sstream>
+
+#include "alarm-observer/alarmobservable.h"
 
 /*!
  * \defgroup AlarmComposite
@@ -30,7 +33,7 @@
  *
  * \brief Base component class of composite structure
  */
-class AlarmComponent : public std::enable_shared_from_this<AlarmComponent>
+class AlarmComponent : public AlarmObservable, public std::enable_shared_from_this<AlarmComponent>
 {
 public:
     typedef std::shared_ptr<AlarmComponent> SPtr;
@@ -53,7 +56,7 @@ public:
     /*!
      * \brief Print component info
      */
-    virtual void printInfo();
+    virtual void printInfo() const;
 
     /*!
      * \brief Returns id of the component
@@ -73,6 +76,21 @@ public:
      * \param sptr parent
      */
     void setParent(const SPtr & sptr);
+
+    /*!
+     * \brief Read activation status
+     */
+    const bool & isActivated() {return activated_;}
+
+    /*!
+     * \brief Notify observers
+     *
+     * Notifies observers and passes notification
+     * to the parent.
+     *
+     * \note this is an overloaded function of AlarmObservable::notify
+     */
+    virtual void notify(const std::string msg) override;
 
 protected:
     /*!

@@ -58,5 +58,5 @@ strategy. Context is implemented in
 * [x] Add activation flag to AlarmComponent and activation counter
 to AlarmStrategy
 * [x] Parent attribute for AlarmComponent
-* [ ] Implement Observer structure
+* [x] Implement Observer structure
 * [ ] Sorting and search algorithms

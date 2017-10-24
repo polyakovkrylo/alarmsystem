@@ -1,3 +1,14 @@
+/*!
+ * \file smokesensor.cpp
+ *
+ * SmokeSensor class definition
+ *
+ * \version 1.0
+ *
+ * \author Vladimir Poliakov
+ * \author Brian Segers
+ */
+
 #include "smokesensor.h"
 
 using std::endl;

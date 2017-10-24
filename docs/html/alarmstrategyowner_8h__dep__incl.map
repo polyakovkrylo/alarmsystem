@@ -1,6 +1,11 @@
 <map id="alarm&#45;strategy/alarmstrategyowner.h" name="alarm&#45;strategy/alarmstrategyowner.h">
-<area shape="rect" id="node2" href="$abstractsensor_8h.html" title="alarm&#45;sensor/abstractsensor.h" alt="" coords="216,80,415,107"/>
-<area shape="rect" id="node3" href="$motionsensor_8h.html" title="alarm&#45;sensor/motionsensor.h" alt="" coords="5,155,196,181"/>
-<area shape="rect" id="node4" href="$smokesensor_8h.html" title="alarm&#45;sensor/smokesensor.h" alt="" coords="220,155,411,181"/>
-<area shape="rect" id="node5" href="$toxicsensor_8h.html" title="alarm&#45;sensor/toxicsensor.h" alt="" coords="435,155,614,181"/>
+<area shape="rect" id="node2" href="$abstractsensor_8h.html" title="alarm&#45;sensor/abstractsensor.h" alt="" coords="344,80,543,107"/>
+<area shape="rect" id="node10" href="$alarmstrategyowner_8cpp.html" title="alarm&#45;strategy/alarmstrategyowner.cpp" alt="" coords="566,80,814,107"/>
+<area shape="rect" id="node3" href="$abstractsensor_8cpp.html" title="alarm&#45;sensor/abstractsensor.cpp" alt="" coords="5,155,217,181"/>
+<area shape="rect" id="node4" href="$motionsensor_8h.html" title="alarm&#45;sensor/motionsensor.h" alt="" coords="241,155,432,181"/>
+<area shape="rect" id="node6" href="$smokesensor_8h.html" title="alarm&#45;sensor/smokesensor.h" alt="" coords="456,155,647,181"/>
+<area shape="rect" id="node8" href="$toxicsensor_8h.html" title="alarm&#45;sensor/toxicsensor.h" alt="" coords="678,155,857,181"/>
+<area shape="rect" id="node5" href="$motionsensor_8cpp.html" title="alarm&#45;sensor/motionsensor.cpp" alt="" coords="221,229,425,256"/>
+<area shape="rect" id="node7" href="$smokesensor_8cpp.html" title="alarm&#45;sensor/smokesensor.cpp" alt="" coords="449,229,653,256"/>
+<area shape="rect" id="node9" href="$toxicsensor_8cpp.html" title="alarm&#45;sensor/toxicsensor.cpp" alt="" coords="677,229,871,256"/>
 </map>

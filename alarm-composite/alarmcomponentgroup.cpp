@@ -1,3 +1,15 @@
+/*!
+ * \file alarmcomponentgroup.cpp
+ *
+ * AlarmComponentGroup class definition
+ *
+ * \version 1.0
+ *
+ * \author Vladimir Poliakov
+ * \author Brian Segers
+ */
+
+
 #include "alarmcomponentgroup.h"
 
 using std::cout;
@@ -34,12 +46,12 @@ void AlarmComponentGroup::deactivate()
     }
 }
 
-void AlarmComponentGroup::printInfo()
+void AlarmComponentGroup::printInfo() const
 {
     // print info about *this instance has been
     // activated and activate each child.
     AlarmComponent::printInfo();
-    for(SPtr &child : children_) {
+    for(const SPtr &child : children_) {
         child->printInfo();
     }
 }

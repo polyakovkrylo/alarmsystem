@@ -1,3 +1,14 @@
+/*!
+ * \file toxicsensor.cpp
+ *
+ * ToxicSensor class definition
+ *
+ * \version 1.0
+ *
+ * \author Vladimir Poliakov
+ * \author Brian Segers
+ */
+
 #include "toxicsensor.h"
 
 using std::string;

@@ -11,8 +11,7 @@ Base component class of composite structure.
 
 
 
-Inheritance diagram for Alarm\+Component\+:
-\nopagebreak
+Inheritance diagram for Alarm\+Component\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -21,12 +20,11 @@ Inheritance diagram for Alarm\+Component\+:
 \end{figure}
 
 
-Collaboration diagram for Alarm\+Component\+:
-\nopagebreak
+Collaboration diagram for Alarm\+Component\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=296pt]{classAlarmComponent__coll__graph}
+\includegraphics[width=350pt]{classAlarmComponent__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
@@ -46,7 +44,7 @@ virtual void \hyperlink{classAlarmComponent_ab2acf6b580efe04bd617580ecb7323f1}{a
 virtual void \hyperlink{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}{deactivate} ()\hypertarget{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}{}\label{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}
 
 \begin{DoxyCompactList}\small\item\em Deactivation of the component. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classAlarmComponent_a51a7a6e0d85da344c741deddfcb7cff3}{print\+Info} ()\hypertarget{classAlarmComponent_a51a7a6e0d85da344c741deddfcb7cff3}{}\label{classAlarmComponent_a51a7a6e0d85da344c741deddfcb7cff3}
+virtual void \hyperlink{classAlarmComponent_a012b3a3e0208a8dec3d6100c4789aeb7}{print\+Info} () const \hypertarget{classAlarmComponent_a012b3a3e0208a8dec3d6100c4789aeb7}{}\label{classAlarmComponent_a012b3a3e0208a8dec3d6100c4789aeb7}
 
 \begin{DoxyCompactList}\small\item\em Print component info. \end{DoxyCompactList}\item 
 const std\+::string \& \hyperlink{classAlarmComponent_a7d576b833767677aef88ac0e53dc5f22}{get\+Id} () const \hypertarget{classAlarmComponent_a7d576b833767677aef88ac0e53dc5f22}{}\label{classAlarmComponent_a7d576b833767677aef88ac0e53dc5f22}
@@ -55,7 +53,12 @@ const std\+::string \& \hyperlink{classAlarmComponent_a7d576b833767677aef88ac0e5
 const S\+Ptr \hyperlink{classAlarmComponent_ab105241dfaade407b9683bb32e8d0f2f}{get\+Root\+Component} ()
 \begin{DoxyCompactList}\small\item\em Get root object of the group. \end{DoxyCompactList}\item 
 void \hyperlink{classAlarmComponent_a8a23397273077d5808735d083878378a}{set\+Parent} (const S\+Ptr \&sptr)
-\begin{DoxyCompactList}\small\item\em Set the parent of the component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Set the parent of the component. \end{DoxyCompactList}\item 
+const bool \& \hyperlink{classAlarmComponent_ad445ad4870607e5305ef6e7eee10eb3b}{is\+Activated} ()\hypertarget{classAlarmComponent_ad445ad4870607e5305ef6e7eee10eb3b}{}\label{classAlarmComponent_ad445ad4870607e5305ef6e7eee10eb3b}
+
+\begin{DoxyCompactList}\small\item\em Read activation status. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAlarmComponent_ae94d389ca9933e31e2bda486eb5b7c1f}{notify} (const std\+::string msg) override
+\begin{DoxyCompactList}\small\item\em Notify observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Protected Attributes}
 \begin{DoxyCompactItemize}
 \item 
@@ -104,7 +107,27 @@ Class constructor.
 
 Get root object of the group. 
 
-Return root object of a group component is in or component itself if a component is a root object \index{Alarm\+Component@{Alarm\+Component}!set\+Parent@{set\+Parent}}
+Return root object of a group component is in or component itself if a component is a root object \index{Alarm\+Component@{Alarm\+Component}!notify@{notify}}
+\index{notify@{notify}!Alarm\+Component@{Alarm\+Component}}
+\subsubsection[{\texorpdfstring{notify(const std\+::string msg) override}{notify(const std::string msg) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+::notify (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{classAlarmComponent_ae94d389ca9933e31e2bda486eb5b7c1f}{}\label{classAlarmComponent_ae94d389ca9933e31e2bda486eb5b7c1f}
+
+
+Notify observers. 
+
+Notifies observers and passes notification to the parent.
+
+\begin{DoxyNote}{Note}
+this is an overloaded function of \hyperlink{classAlarmObservable_afe90d2612d363050a620eb8b2ef2fa0a}{Alarm\+Observable\+::notify} 
+\end{DoxyNote}
+
+
+Reimplemented from \hyperlink{classAlarmObservable_afe90d2612d363050a620eb8b2ef2fa0a}{Alarm\+Observable}.
+
+\index{Alarm\+Component@{Alarm\+Component}!set\+Parent@{set\+Parent}}
 \index{set\+Parent@{set\+Parent}!Alarm\+Component@{Alarm\+Component}}
 \subsubsection[{\texorpdfstring{set\+Parent(const S\+Ptr \&sptr)}{setParent(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+::set\+Parent (
 \begin{DoxyParamCaption}
@@ -125,4 +148,4 @@ Set the parent of the component.
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
 alarm-\/composite/\hyperlink{alarmcomponent_8h}{alarmcomponent.\+h}\item 
-alarm-\/composite/alarmcomponent.\+cpp\end{DoxyCompactItemize}
+alarm-\/composite/\hyperlink{alarmcomponent_8cpp}{alarmcomponent.\+cpp}\end{DoxyCompactItemize}

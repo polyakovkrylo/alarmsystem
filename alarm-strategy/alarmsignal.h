@@ -1,7 +1,7 @@
 /*!
- * \file callpolice.h
+ * \file alarmsignal.h
  *
- * CallPolice class declaration
+ * AlarmSignal class declaration
  *
  * \version 1.0
  *
@@ -25,11 +25,11 @@
  * Intended for testing purposes.
  */
 
-class CallPolice : public AlarmStrategy
+class AlarmSignal : public AlarmStrategy
 {
 public:
-    CallPolice();
-    ~CallPolice();
+    AlarmSignal();
+    ~AlarmSignal();
 };
 
 #endif // CALLPOLICE_H

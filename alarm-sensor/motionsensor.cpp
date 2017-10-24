@@ -1,3 +1,14 @@
+/*!
+ * \file motionsensor.cpp
+ *
+ * MotionSensor class definition
+ *
+ * \version 1.0
+ *
+ * \author Vladimir Poliakov
+ * \author Brian Segers
+ */
+
 #include "motionsensor.h"
 
 using std::string;

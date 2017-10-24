@@ -1,8 +1,20 @@
+/*!
+ * \file alarmcomponent.cpp
+ *
+ * AlarmComponent class definition
+ *
+ * \version 1.0
+ *
+ * \author Vladimir Poliakov
+ * \author Brian Segers
+ */
+
 #include "alarmcomponent.h"
 
 using std::cout;
 using std::endl;
 using std::string;
+using std::stringstream;
 
 AlarmComponent::AlarmComponent(string id) :
     id_{id}, parent_{nullptr}, activated_{false}
@@ -19,7 +31,13 @@ void AlarmComponent::activate()
 {
     if(!activated_) {
         activated_ = true;
-        cout << id_ << " has been activated" << endl;
+        cout << id_  << " activated" << endl;
+        // Add information about the root component
+        // and notify observers
+        stringstream msg;
+        msg << "Facility " << getRootComponent()->getId()
+            << " : " << id_  << " activated" << endl;
+        notify(msg.str());
     }
 }
 
@@ -27,11 +45,19 @@ void AlarmComponent::deactivate()
 {
     if(activated_){
         activated_ = false;
-        cout << id_ << " has been deactivated" << endl;
+
+        cout << id_  << " deactivated" << endl;
+
+        // Add information about the root component
+        // and notify observers
+        stringstream msg;
+        msg << "Facility " << getRootComponent()->getId()
+            << " : " << id_  << " deactivated" << endl;
+        notify(msg.str());
     }
 }
 
-void AlarmComponent::printInfo()
+void AlarmComponent::printInfo() const
 {
     cout << id_ << endl;
 }
@@ -43,7 +69,14 @@ const AlarmComponent::SPtr AlarmComponent::getRootComponent()
     return sptr;
 }
 
-void AlarmComponent::setParent(const AlarmComponent::SPtr &sptr)
+void AlarmComponent::setParent(const SPtr &sptr)
 {
     parent_ = sptr;
+}
+
+void AlarmComponent::notify(const std::string msg)
+{
+    AlarmObservable::notify(msg);
+    if(parent_!=nullptr)
+        parent_->notify(msg);
 }

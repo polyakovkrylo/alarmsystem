@@ -1,3 +1,14 @@
+/*!
+ * \file alarmstrategyowner.cpp
+ *
+ * AlarmStrategyOwner class definition
+ *
+ * \version 1.0
+ *
+ * \author Vladimir Poliakov
+ * \author Brian Segers
+ */
+
 #include "alarmstrategyowner.h"
 
 AlarmStrategyOwner::AlarmStrategyOwner()

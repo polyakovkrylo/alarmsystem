@@ -1,3 +1,4 @@
 <map id="AlarmComponentGroup" name="AlarmComponentGroup">
-<area shape="rect" id="node2" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="48,95,171,121"/>
+<area shape="rect" id="node2" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="100,95,223,121"/>
+<area shape="rect" id="node3" href="$classAlarmObservable.html" title="Observable class of observer structure. " alt="" coords="5,13,128,39"/>
 </map>

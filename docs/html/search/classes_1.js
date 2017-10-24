@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['callfiremen',['CallFiremen',['../classCallFiremen.html',1,'']]],
-  ['callpolice',['CallPolice',['../classCallPolice.html',1,'']]]
+  ['motionsensor',['MotionSensor',['../classMotionSensor.html',1,'']]]
 ];

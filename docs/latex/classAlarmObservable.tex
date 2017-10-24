@@ -1,0 +1,104 @@
+\hypertarget{classAlarmObservable}{}\section{Alarm\+Observable Class Reference}
+\label{classAlarmObservable}\index{Alarm\+Observable@{Alarm\+Observable}}
+
+
+Observable class of observer structure.  
+
+
+
+
+{\ttfamily \#include $<$alarmobservable.\+h$>$}
+
+
+
+Inheritance diagram for Alarm\+Observable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classAlarmObservable__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::shared\+\_\+ptr$<$ \hyperlink{classAlarmObserver}{Alarm\+Observer} $>$ {\bfseries S\+Ptr}\hypertarget{classAlarmObservable_a12ddadb3633a785fa4f79378b2b46878}{}\label{classAlarmObservable_a12ddadb3633a785fa4f79378b2b46878}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classAlarmObservable_afd9c686eed16b00d73f8257d052021b4}{Alarm\+Observable} ()\hypertarget{classAlarmObservable_afd9c686eed16b00d73f8257d052021b4}{}\label{classAlarmObservable_afd9c686eed16b00d73f8257d052021b4}
+
+\begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmObservable_aa8cf379c39c2c4a1e87925a6e79dfa11}{add\+Observer} (const S\+Ptr \&sptr)
+\begin{DoxyCompactList}\small\item\em Add observer to the list of observers. \end{DoxyCompactList}\item 
+void \hyperlink{classAlarmObservable_a76733a3271e053f105c428f3d878aa7e}{remove\+Observer} (const S\+Ptr \&sptr)
+\begin{DoxyCompactList}\small\item\em Remove observer from the list of observers. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAlarmObservable_afe90d2612d363050a620eb8b2ef2fa0a}{notify} (const std\+::string msg)
+\begin{DoxyCompactList}\small\item\em Notify observers. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Observable class of observer structure. 
+
+Gives an opportunity to its successor to notify attached observer classes 
+
+\subsection{Member Function Documentation}
+\index{Alarm\+Observable@{Alarm\+Observable}!add\+Observer@{add\+Observer}}
+\index{add\+Observer@{add\+Observer}!Alarm\+Observable@{Alarm\+Observable}}
+\subsubsection[{\texorpdfstring{add\+Observer(const S\+Ptr \&sptr)}{addObserver(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Observable\+::add\+Observer (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{sptr}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmObservable_aa8cf379c39c2c4a1e87925a6e79dfa11}{}\label{classAlarmObservable_aa8cf379c39c2c4a1e87925a6e79dfa11}
+
+
+Add observer to the list of observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sptr} & pointer to observer \\
+\hline
+\end{DoxyParams}
+\index{Alarm\+Observable@{Alarm\+Observable}!notify@{notify}}
+\index{notify@{notify}!Alarm\+Observable@{Alarm\+Observable}}
+\subsubsection[{\texorpdfstring{notify(const std\+::string msg)}{notify(const std::string msg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Observable\+::notify (
+\begin{DoxyParamCaption}
+\item[{const std\+::string}]{msg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{classAlarmObservable_afe90d2612d363050a620eb8b2ef2fa0a}{}\label{classAlarmObservable_afe90d2612d363050a620eb8b2ef2fa0a}
+
+
+Notify observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & message to be sent \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classAlarmComponent_ae94d389ca9933e31e2bda486eb5b7c1f}{Alarm\+Component}.
+
+\index{Alarm\+Observable@{Alarm\+Observable}!remove\+Observer@{remove\+Observer}}
+\index{remove\+Observer@{remove\+Observer}!Alarm\+Observable@{Alarm\+Observable}}
+\subsubsection[{\texorpdfstring{remove\+Observer(const S\+Ptr \&sptr)}{removeObserver(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Observable\+::remove\+Observer (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{sptr}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmObservable_a76733a3271e053f105c428f3d878aa7e}{}\label{classAlarmObservable_a76733a3271e053f105c428f3d878aa7e}
+
+
+Remove observer from the list of observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em sptr} & pointer to observer \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+alarm-\/observer/\hyperlink{alarmobservable_8h}{alarmobservable.\+h}\item 
+alarm-\/observer/\hyperlink{alarmobservable_8cpp}{alarmobservable.\+cpp}\end{DoxyCompactItemize}

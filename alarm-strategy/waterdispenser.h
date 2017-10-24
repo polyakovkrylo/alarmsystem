@@ -1,7 +1,7 @@
 /*!
- * \file callfiremen.h
+ * \file waterdispenser.h
  *
- * CallFiremen class declaration
+ * WaterDispenser class declaration
  *
  * \version 1.0
  *
@@ -26,10 +26,10 @@
  * Intended for testing purposes.
  */
 
-class CallFiremen : public AlarmStrategy
+class WaterDispenser : public AlarmStrategy
 {
 public:
-    CallFiremen();
-    ~CallFiremen();
+    WaterDispenser();
+    ~WaterDispenser();
 };
 #endif // CALLFIREMEN_H

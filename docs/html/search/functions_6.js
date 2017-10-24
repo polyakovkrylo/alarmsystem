@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['remove',['remove',['../classAlarmComponentGroup.html#a39378037a74da6477fb01f2965fe67da',1,'AlarmComponentGroup']]],
-  ['removestrategy',['removeStrategy',['../classAlarmStrategyOwner.html#a50ca40d662757f37fdb17194fdbb165a',1,'AlarmStrategyOwner']]]
+  ['notify',['notify',['../classAlarmComponent.html#ae94d389ca9933e31e2bda486eb5b7c1f',1,'AlarmComponent::notify()'],['../classAlarmObservable.html#afe90d2612d363050a620eb8b2ef2fa0a',1,'AlarmObservable::notify()']]]
 ];
