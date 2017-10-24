@@ -1,7 +1,7 @@
 <map id="AbstractSensor" name="AbstractSensor">
-<area shape="rect" id="node4" href="$classMotionSensor.html" title="Motion sensor class. " alt="" coords="5,155,108,181"/>
-<area shape="rect" id="node5" href="$classSmokeSensor.html" title="Smoke sensor class. " alt="" coords="133,155,237,181"/>
-<area shape="rect" id="node6" href="$classToxicSensor.html" title="Toxic sensor class. " alt="" coords="261,155,356,181"/>
-<area shape="rect" id="node2" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="45,5,167,32"/>
-<area shape="rect" id="node3" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="192,5,335,32"/>
+<area shape="rect" id="node5" href="$classMotionSensor.html" title="Motion sensor class. " alt="" coords="9,244,111,271"/>
+<area shape="rect" id="node6" href="$classSmokeSensor.html" title="Smoke sensor class. " alt="" coords="136,244,240,271"/>
+<area shape="rect" id="node7" href="$classToxicSensor.html" title="Toxic sensor class Dummy implementation of toxic sensor component. Intended for testing purposes..." alt="" coords="265,244,359,271"/>
+<area shape="rect" id="node2" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="48,95,171,121"/>
+<area shape="rect" id="node4" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="195,95,338,121"/>
 </map>

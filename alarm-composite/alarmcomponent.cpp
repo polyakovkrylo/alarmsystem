@@ -5,7 +5,7 @@ using std::endl;
 using std::string;
 
 AlarmComponent::AlarmComponent(string id) :
-    id_{id}, activated_{false}
+    id_{id}, parent_{nullptr}, activated_{false}
 {
 
 }
@@ -34,4 +34,16 @@ void AlarmComponent::deactivate()
 void AlarmComponent::printInfo()
 {
     cout << id_ << endl;
+}
+
+const AlarmComponent::SPtr AlarmComponent::getRootComponent()
+{
+    SPtr sptr;
+    (parent_ == nullptr) ? sptr = shared_from_this() : sptr = parent_->getRootComponent();
+    return sptr;
+}
+
+void AlarmComponent::setParent(const AlarmComponent::SPtr &sptr)
+{
+    parent_ = sptr;
 }

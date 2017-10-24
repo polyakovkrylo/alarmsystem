@@ -1,6 +1,6 @@
-<map id="alarmstrategyowner.h" name="alarmstrategyowner.h">
-<area shape="rect" id="node2" href="$abstractsensor_8h.html" title="abstractsensor.h" alt="" coords="131,80,249,107"/>
-<area shape="rect" id="node3" href="$smokesensor_8h.html" title="smokesensor.h" alt="" coords="5,155,116,181"/>
-<area shape="rect" id="node4" href="$toxicsensor_8h.html" title="toxicsensor.h" alt="" coords="140,155,240,181"/>
-<area shape="rect" id="node5" href="$motionsensor_8h.html" title="motionsensor.h" alt="" coords="264,155,375,181"/>
+<map id="alarm&#45;strategy/alarmstrategyowner.h" name="alarm&#45;strategy/alarmstrategyowner.h">
+<area shape="rect" id="node2" href="$abstractsensor_8h.html" title="alarm&#45;sensor/abstractsensor.h" alt="" coords="216,80,415,107"/>
+<area shape="rect" id="node3" href="$motionsensor_8h.html" title="alarm&#45;sensor/motionsensor.h" alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node4" href="$smokesensor_8h.html" title="alarm&#45;sensor/smokesensor.h" alt="" coords="220,155,411,181"/>
+<area shape="rect" id="node5" href="$toxicsensor_8h.html" title="alarm&#45;sensor/toxicsensor.h" alt="" coords="435,155,614,181"/>
 </map>

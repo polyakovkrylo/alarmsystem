@@ -2,7 +2,7 @@
 \label{classToxicSensor}\index{Toxic\+Sensor@{Toxic\+Sensor}}
 
 
-Toxic sensor class.  
+Toxic sensor class Dummy implementation of toxic sensor component. Intended for testing purposes.  
 
 
 
@@ -11,20 +11,22 @@ Toxic sensor class.
 
 
 
-Inheritance diagram for Toxic\+Sensor\+:\nopagebreak
+Inheritance diagram for Toxic\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classToxicSensor__inherit__graph}
+\includegraphics[width=330pt]{classToxicSensor__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Toxic\+Sensor\+:\nopagebreak
+Collaboration diagram for Toxic\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classToxicSensor__coll__graph}
+\includegraphics[width=350pt]{classToxicSensor__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Types}
@@ -40,14 +42,21 @@ enum \hyperlink{classToxicSensor_a140f14965ad9a7e71fc8a5a2ed2c919b}{Gas\+Type} \
 \hyperlink{classToxicSensor_a3d1f5f90e0561127e8ee3e5ee79c6473}{Toxic\+Sensor} (\hyperlink{classToxicSensor_a140f14965ad9a7e71fc8a5a2ed2c919b}{Gas\+Type} gas=Chlorine, int threshold=20, std\+::string id=\char`\"{}Unkown id\char`\"{}, std\+::string vendor=\char`\"{}Unkown vendor\char`\"{})
 \begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classToxicSensor_ae4c58761cf2ef02e1d782f7f13cc56ff}{update} () override
-\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\item 
+virtual const std\+::string \hyperlink{classToxicSensor_a544cfac25f1c5aa8c5e37de4ea4641b8}{get\+Info} () const override\hypertarget{classToxicSensor_a544cfac25f1c5aa8c5e37de4ea4641b8}{}\label{classToxicSensor_a544cfac25f1c5aa8c5e37de4ea4641b8}
+
+\begin{DoxyCompactList}\small\item\em String stream containing info about the sensor. \end{DoxyCompactList}\item 
+const std\+::string \hyperlink{classToxicSensor_a1f49ce67d6f7d871249b7d817940f6b8}{get\+Gas\+Type} () const \hypertarget{classToxicSensor_a1f49ce67d6f7d871249b7d817940f6b8}{}\label{classToxicSensor_a1f49ce67d6f7d871249b7d817940f6b8}
+
+\begin{DoxyCompactList}\small\item\em Returns string that contains name of gas. \end{DoxyCompactList}\item 
+int \hyperlink{classToxicSensor_a4a0ec4b0440b8c8b3cdbb703277cf87c}{get\+Threshold} () const \hypertarget{classToxicSensor_a4a0ec4b0440b8c8b3cdbb703277cf87c}{}\label{classToxicSensor_a4a0ec4b0440b8c8b3cdbb703277cf87c}
+
+\begin{DoxyCompactList}\small\item\em Returns current threshold value. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-Toxic sensor class. 
-
-Dummy implementation of toxic sensor component. Intended for testing purposes. 
+Toxic sensor class Dummy implementation of toxic sensor component. Intended for testing purposes. 
 
 \subsection{Member Enumeration Documentation}
 \index{Toxic\+Sensor@{Toxic\+Sensor}!Gas\+Type@{Gas\+Type}}
@@ -107,5 +116,5 @@ Implements \hyperlink{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{Abs
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{toxicsensor_8h}{toxicsensor.\+h}\item 
-toxicsensor.\+cpp\end{DoxyCompactItemize}
+alarm-\/sensor/\hyperlink{toxicsensor_8h}{toxicsensor.\+h}\item 
+alarm-\/sensor/toxicsensor.\+cpp\end{DoxyCompactItemize}

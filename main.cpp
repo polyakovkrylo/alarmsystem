@@ -16,7 +16,9 @@ int main()
     // of different types, then apply
     // strategies to them and update
     // sensors' data few times.
-    AlarmComponentGroup room("Room 1");
+    auto building = make_shared<AlarmComponentGroup>("Building 1");
+
+    auto room = make_shared<AlarmComponentGroup>("Room 1");
 
     auto smoke = make_shared<SmokeSensor>(10, "SM1", "Vendor1");
     auto toxic = make_shared<ToxicSensor>(ToxicSensor::Chlorine, 10, "TOX1", "Vendor1");
@@ -25,9 +27,11 @@ int main()
     auto police = make_shared<CallPolice>();
     auto fire = make_shared<CallFiremen>();
 
-    room.add(smoke);
-    room.add(toxic);
-    room.add(motion);
+    building->add(room);
+
+    room->add(smoke);
+    room->add(toxic);
+    room->add(motion);
 
     smoke->addStrategy(fire);
 
@@ -36,8 +40,13 @@ int main()
 
     motion->addStrategy(police);
 
-    cout << "Testing multiple activation of a sensor"
-         << "and a strategy..." << endl;
+    cout << "Testing parentness ..." << endl;
+    cout << "Root component of " << smoke->getId()
+         << " is " << smoke->getRootComponent()->getId() << endl;
+    cout<<endl;
+
+    cout << "Testing multiple activation of sensors"
+         << " and a strategies..." << endl;
     smoke->activate();
     smoke->activate();
     toxic->activate();

@@ -44,13 +44,15 @@ void AlarmComponentGroup::printInfo()
     }
 }
 
-void AlarmComponentGroup::add(const SPtr &sptr)
+void AlarmComponentGroup::add(const AlarmComponent::SPtr &sptr)
 {
+    sptr->setParent(shared_from_this());
     children_.push_back(sptr);
 }
 
-void AlarmComponentGroup::remove(const SPtr &sptr)
+void AlarmComponentGroup::remove(const AlarmComponent::SPtr &sptr)
 {
+    sptr->setParent(nullptr);
     children_.remove(sptr);
 }
 

@@ -11,20 +11,22 @@ Abstract sensor class.
 
 
 
-Inheritance diagram for Abstract\+Sensor\+:\nopagebreak
+Inheritance diagram for Abstract\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=343pt]{classAbstractSensor__inherit__graph}
+\includegraphics[width=346pt]{classAbstractSensor__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Abstract\+Sensor\+:\nopagebreak
+Collaboration diagram for Abstract\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classAbstractSensor__coll__graph}
+\includegraphics[width=350pt]{classAbstractSensor__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -41,12 +43,15 @@ virtual void \hyperlink{classAbstractSensor_a0071c6499b1538713bb46d07f0b30ca1}{a
 virtual void \hyperlink{classAbstractSensor_a7f921f96118605def806c40139f5496b}{deactivate} ()\hypertarget{classAbstractSensor_a7f921f96118605def806c40139f5496b}{}\label{classAbstractSensor_a7f921f96118605def806c40139f5496b}
 
 \begin{DoxyCompactList}\small\item\em Deactivates the sensor, i.\+e. deactivates alarm strategies. \end{DoxyCompactList}\item 
-std\+::string \hyperlink{classAbstractSensor_a8e0920accea462f26cdbda13623ef4c1}{get\+Vendor} ()\hypertarget{classAbstractSensor_a8e0920accea462f26cdbda13623ef4c1}{}\label{classAbstractSensor_a8e0920accea462f26cdbda13623ef4c1}
+std\+::string \hyperlink{classAbstractSensor_a2786a5387ea8a90f8451cb3a64a3e152}{get\+Vendor} () const \hypertarget{classAbstractSensor_a2786a5387ea8a90f8451cb3a64a3e152}{}\label{classAbstractSensor_a2786a5387ea8a90f8451cb3a64a3e152}
 
 \begin{DoxyCompactList}\small\item\em Returns vendor name. \end{DoxyCompactList}\item 
-std\+::string \hyperlink{classAbstractSensor_a3d49d32a83d269c7487de10497f7f94a}{get\+Type} ()\hypertarget{classAbstractSensor_a3d49d32a83d269c7487de10497f7f94a}{}\label{classAbstractSensor_a3d49d32a83d269c7487de10497f7f94a}
+const std\+::string \hyperlink{classAbstractSensor_a31f55a2259b24f124b64a3ddd3004d6e}{get\+Type} () const \hypertarget{classAbstractSensor_a31f55a2259b24f124b64a3ddd3004d6e}{}\label{classAbstractSensor_a31f55a2259b24f124b64a3ddd3004d6e}
 
-\begin{DoxyCompactList}\small\item\em Returns type of sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Returns type of sensor. \end{DoxyCompactList}\item 
+virtual const std\+::string \hyperlink{classAbstractSensor_a3b498785d810c29b3d20254a365adb43}{get\+Info} () const \hypertarget{classAbstractSensor_a3b498785d810c29b3d20254a365adb43}{}\label{classAbstractSensor_a3b498785d810c29b3d20254a365adb43}
+
+\begin{DoxyCompactList}\small\item\em String stream containing info about the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -87,5 +92,5 @@ Class constructor.
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{abstractsensor_8h}{abstractsensor.\+h}\item 
-abstractsensor.\+cpp\end{DoxyCompactItemize}
+alarm-\/sensor/\hyperlink{abstractsensor_8h}{abstractsensor.\+h}\item 
+alarm-\/sensor/abstractsensor.\+cpp\end{DoxyCompactItemize}

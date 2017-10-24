@@ -1,5 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classAlarmStrategy.html" title="Strategy class implementation of strategy pattern. " alt="" coords="5,31,111,57"/>
-<area shape="rect" id="node2" href="$classCallFiremen.html" title="Call firemen strategy class. " alt="" coords="159,5,251,32"/>
-<area shape="rect" id="node3" href="$classCallPolice.html" title="Call police strategy class. " alt="" coords="164,56,245,83"/>
+<area shape="rect" id="node1" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="220,56,363,83"/>
+<area shape="rect" id="node2" href="$classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="434,56,546,83"/>
+<area shape="rect" id="node3" href="$classMotionSensor.html" title="Motion sensor class. " alt="" coords="618,5,721,32"/>
+<area shape="rect" id="node4" href="$classSmokeSensor.html" title="Smoke sensor class. " alt="" coords="617,56,721,83"/>
+<area shape="rect" id="node5" href="$classToxicSensor.html" title="Toxic sensor class Dummy implementation of toxic sensor component. Intended for testing purposes..." alt="" coords="622,107,717,133"/>
+<area shape="rect" id="node7" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="230,107,353,133"/>
+<area shape="rect" id="node8" href="$classAlarmComponentGroup.html" title="Group component class of composite structure. " alt="" coords="411,107,569,133"/>
 </map>

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['toxicsensor',['ToxicSensor',['../classToxicSensor.html',1,'ToxicSensor'],['../classToxicSensor.html#a3d1f5f90e0561127e8ee3e5ee79c6473',1,'ToxicSensor::ToxicSensor()']]],
-  ['toxicsensor_2eh',['toxicsensor.h',['../toxicsensor_8h.html',1,'']]]
+  ['setparent',['setParent',['../classAlarmComponent.html#a8a23397273077d5808735d083878378a',1,'AlarmComponent']]],
+  ['smokesensor',['SmokeSensor',['../classSmokeSensor.html',1,'SmokeSensor'],['../classSmokeSensor.html#a0a8061f510440bd20f6ca7238b23516c',1,'SmokeSensor::SmokeSensor()']]],
+  ['smokesensor_2eh',['smokesensor.h',['../smokesensor_8h.html',1,'']]]
 ];

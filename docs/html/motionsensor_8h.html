@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Alarm Sytem: motionsensor.h File Reference</title>
+<title>Alarm Sytem: alarm-sensor/motionsensor.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,6 +63,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow2" class="tabs2">
     <ul class="tablist">
       <li><a href="files.html"><span>File&#160;List</span></a></li>
+      <li><a href="globals.html"><span>File&#160;Members</span></a></li>
     </ul>
   </div>
 <!-- window showing the filter options -->
@@ -79,27 +80,30 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </iframe>
 </div>
 
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_11e6dc7e0283bb6670d81be19983c8f4.html">alarm-sensor</a></li>  </ul>
+</div>
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">motionsensor.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &lt;cmath&gt;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
 <code>#include &quot;<a class="el" href="abstractsensor_8h_source.html">abstractsensor.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for motionsensor.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="motionsensor_8h__incl.png" border="0" usemap="#motionsensor_8h" alt=""/></div>
-<map name="motionsensor_8h" id="motionsensor_8h">
-<area shape="rect" id="node5" href="abstractsensor_8h.html" title="abstractsensor.h" alt="" coords="195,80,314,107"/>
-<area shape="rect" id="node6" href="alarmcomponent_8h.html" title="alarmcomponent.h" alt="" coords="190,229,319,256"/>
-<area shape="rect" id="node7" href="alarmstrategyowner_8h.html" title="alarmstrategyowner.h" alt="" coords="344,155,491,181"/>
-<area shape="rect" id="node10" href="alarmstrategy_8h.html" title="alarmstrategy.h" alt="" coords="501,229,613,256"/>
+<div class="center"><img src="motionsensor_8h__incl.png" border="0" usemap="#alarm-sensor_2motionsensor_8h" alt=""/></div>
+<map name="alarm-sensor_2motionsensor_8h" id="alarm-sensor_2motionsensor_8h">
+<area shape="rect" id="node3" href="abstractsensor_8h.html" title="abstractsensor.h" alt="" coords="315,80,434,107"/>
+<area shape="rect" id="node8" href="alarmcomponent_8h.html" title="alarm&#45;composite/alarmcomponent.h" alt="" coords="336,155,565,181"/>
+<area shape="rect" id="node9" href="alarmstrategyowner_8h.html" title="alarm&#45;strategy/alarmstrategyowner.h" alt="" coords="26,155,261,181"/>
+<area shape="rect" id="node11" href="alarmstrategy_8h.html" title="alarmstrategy.h" alt="" coords="136,229,248,256"/>
 </map>
 </div>
 </div>
@@ -110,6 +114,12 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMotionSensor.html">MotionSensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Motion sensor class.  <a href="classMotionSensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a460a213e689a60bfd36d00b2dcf308c5"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="motionsensor_8h.html#a460a213e689a60bfd36d00b2dcf308c5">operator&lt;&lt;</a> (std::ostream &amp;lhs, const std::shared_ptr&lt; <a class="el" href="classMotionSensor.html">MotionSensor</a> &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a460a213e689a60bfd36d00b2dcf308c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes info about the sensor to the output stream.  <a href="#a460a213e689a60bfd36d00b2dcf308c5">More...</a><br /></td></tr>
+<tr class="separator:a460a213e689a60bfd36d00b2dcf308c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classMotionSensor.html" title="Motion sensor class. ">MotionSensor</a> class declaration</p>
@@ -117,7 +127,45 @@ Classes</h2></td></tr>
 <dl class="section author"><dt>Author</dt><dd>Vladimir Poliakov </dd>
 <dd>
 Brian Segers </dd></dl>
-</div></div><!-- contents -->
+</div><h2 class="groupheader">Function Documentation</h2>
+<a class="anchor" id="a460a213e689a60bfd36d00b2dcf308c5"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::ostream&amp; operator&lt;&lt; </td>
+          <td>(</td>
+          <td class="paramtype">std::ostream &amp;&#160;</td>
+          <td class="paramname"><em>lhs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classMotionSensor.html">MotionSensor</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>rhs</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Passes info about the sensor to the output stream. </p>
+<dl class="section note"><dt>Note</dt><dd>This is an overloaded function </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

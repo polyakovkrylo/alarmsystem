@@ -11,20 +11,22 @@ Smoke sensor class.
 
 
 
-Inheritance diagram for Smoke\+Sensor\+:\nopagebreak
+Inheritance diagram for Smoke\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classSmokeSensor__inherit__graph}
+\includegraphics[width=330pt]{classSmokeSensor__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Smoke\+Sensor\+:\nopagebreak
+Collaboration diagram for Smoke\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classSmokeSensor__coll__graph}
+\includegraphics[width=350pt]{classSmokeSensor__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -33,7 +35,12 @@ Collaboration diagram for Smoke\+Sensor\+:\nopagebreak
 \hyperlink{classSmokeSensor_a0a8061f510440bd20f6ca7238b23516c}{Smoke\+Sensor} (int threshold=20, std\+::string id=\char`\"{}Unkown id\char`\"{}, std\+::string vendor=\char`\"{}Unkown vendor\char`\"{})
 \begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classSmokeSensor_a31bc900b0d1c5c893f8555fdcbe4266b}{update} () override
-\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\item 
+virtual const std\+::string \hyperlink{classSmokeSensor_a2cc7e7b2da913abb8aefcd92d50ef046}{get\+Info} () const override\hypertarget{classSmokeSensor_a2cc7e7b2da913abb8aefcd92d50ef046}{}\label{classSmokeSensor_a2cc7e7b2da913abb8aefcd92d50ef046}
+
+\begin{DoxyCompactList}\small\item\em String stream containing info about the sensor. \end{DoxyCompactList}\item 
+int \hyperlink{classSmokeSensor_add325306c6a33436bc9053721cbdb88b}{get\+Threshold} () const 
+\begin{DoxyCompactList}\small\item\em Threshold access function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -68,6 +75,20 @@ Class constructor.
 
 
 \subsection{Member Function Documentation}
+\index{Smoke\+Sensor@{Smoke\+Sensor}!get\+Threshold@{get\+Threshold}}
+\index{get\+Threshold@{get\+Threshold}!Smoke\+Sensor@{Smoke\+Sensor}}
+\subsubsection[{\texorpdfstring{get\+Threshold() const }{getThreshold() const }}]{\setlength{\rightskip}{0pt plus 5cm}int Smoke\+Sensor\+::get\+Threshold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{classSmokeSensor_add325306c6a33436bc9053721cbdb88b}{}\label{classSmokeSensor_add325306c6a33436bc9053721cbdb88b}
+
+
+Threshold access function. 
+
+\begin{DoxyReturn}{Returns}
+current threshold value 
+\end{DoxyReturn}
 \index{Smoke\+Sensor@{Smoke\+Sensor}!update@{update}}
 \index{update@{update}!Smoke\+Sensor@{Smoke\+Sensor}}
 \subsubsection[{\texorpdfstring{update() override}{update() override}}]{\setlength{\rightskip}{0pt plus 5cm}void Smoke\+Sensor\+::update (
@@ -87,5 +108,5 @@ Implements \hyperlink{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{Abs
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{smokesensor_8h}{smokesensor.\+h}\item 
-smokesensor.\+cpp\end{DoxyCompactItemize}
+alarm-\/sensor/\hyperlink{smokesensor_8h}{smokesensor.\+h}\item 
+alarm-\/sensor/smokesensor.\+cpp\end{DoxyCompactItemize}

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['smokesensor',['SmokeSensor',['../classSmokeSensor.html',1,'SmokeSensor'],['../classSmokeSensor.html#a0a8061f510440bd20f6ca7238b23516c',1,'SmokeSensor::SmokeSensor()']]],
-  ['smokesensor_2eh',['smokesensor.h',['../smokesensor_8h.html',1,'']]]
+  ['remove',['remove',['../classAlarmComponentGroup.html#a39378037a74da6477fb01f2965fe67da',1,'AlarmComponentGroup']]],
+  ['removestrategy',['removeStrategy',['../classAlarmStrategyOwner.html#a50ca40d662757f37fdb17194fdbb165a',1,'AlarmStrategyOwner']]]
 ];

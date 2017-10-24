@@ -14,6 +14,7 @@
 
 #include <string>
 #include <iostream>
+#include <memory>
 
 /*!
  * \defgroup AlarmComposite
@@ -29,9 +30,10 @@
  *
  * \brief Base component class of composite structure
  */
-class AlarmComponent
+class AlarmComponent : public std::enable_shared_from_this<AlarmComponent>
 {
 public:
+    typedef std::shared_ptr<AlarmComponent> SPtr;
     /*!
      * \brief Class constructor
      * \param id identificator of the component
@@ -57,12 +59,31 @@ public:
      * \brief Returns id of the component
      */
     const std::string & getId() const {return id_;}
+    
+    /*!
+     * \brief Get root object of the group
+     * 
+     * Return root object of a group component is in or
+     * component itself if a component is a root object
+     */
+    const SPtr getRootComponent();
+
+    /*!
+     * \brief Set the parent of the component
+     * \param sptr parent
+     */
+    void setParent(const SPtr & sptr);
 
 protected:
     /*!
      * \brief identificator of the component
      */
     std::string id_;
+
+    /*!
+     * \brief parent of the component
+     */
+    SPtr parent_;
 
     /*!
      * \brief activation flag

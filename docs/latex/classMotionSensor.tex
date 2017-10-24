@@ -11,20 +11,22 @@ Motion sensor class.
 
 
 
-Inheritance diagram for Motion\+Sensor\+:\nopagebreak
+Inheritance diagram for Motion\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classMotionSensor__inherit__graph}
+\includegraphics[width=330pt]{classMotionSensor__inherit__graph}
 \end{center}
 \end{figure}
 
 
-Collaboration diagram for Motion\+Sensor\+:\nopagebreak
+Collaboration diagram for Motion\+Sensor\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=298pt]{classMotionSensor__coll__graph}
+\includegraphics[width=350pt]{classMotionSensor__coll__graph}
 \end{center}
 \end{figure}
 \subsection*{Public Member Functions}
@@ -33,7 +35,16 @@ Collaboration diagram for Motion\+Sensor\+:\nopagebreak
 \hyperlink{classMotionSensor_a411baafe617c6e11c10aaa0e1ec6a9f4}{Motion\+Sensor} (int min\+Distance=0, int max\+Distance=20, std\+::string id=\char`\"{}Unkown id\char`\"{}, std\+::string vendor=\char`\"{}Unkown vendor\char`\"{})
 \begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classMotionSensor_a8e71f20dc63f45669377e6efc4d7c6df}{update} () override
-\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Update of the current value. \end{DoxyCompactList}\item 
+virtual const std\+::string \hyperlink{classMotionSensor_a9b0a0233e5ccfb714cf5d10acfc0e188}{get\+Info} () const override\hypertarget{classMotionSensor_a9b0a0233e5ccfb714cf5d10acfc0e188}{}\label{classMotionSensor_a9b0a0233e5ccfb714cf5d10acfc0e188}
+
+\begin{DoxyCompactList}\small\item\em String stream containing info about the sensor. \end{DoxyCompactList}\item 
+int \hyperlink{classMotionSensor_aa19bf311e57fc21276d2eb74190cb709}{get\+Min\+Distance} () const \hypertarget{classMotionSensor_aa19bf311e57fc21276d2eb74190cb709}{}\label{classMotionSensor_aa19bf311e57fc21276d2eb74190cb709}
+
+\begin{DoxyCompactList}\small\item\em Returns mininal sensitive distance. \end{DoxyCompactList}\item 
+int \hyperlink{classMotionSensor_af095104075a3e5cb7c6c6466c8813f26}{get\+Max\+Distance} () const \hypertarget{classMotionSensor_af095104075a3e5cb7c6c6466c8813f26}{}\label{classMotionSensor_af095104075a3e5cb7c6c6466c8813f26}
+
+\begin{DoxyCompactList}\small\item\em Returns maximal sensitive distance. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -90,5 +101,5 @@ Implements \hyperlink{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{Abs
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-\hyperlink{motionsensor_8h}{motionsensor.\+h}\item 
-motionsensor.\+cpp\end{DoxyCompactItemize}
+alarm-\/sensor/\hyperlink{motionsensor_8h}{motionsensor.\+h}\item 
+alarm-\/sensor/motionsensor.\+cpp\end{DoxyCompactItemize}

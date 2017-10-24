@@ -1,10 +1,9 @@
-\hypertarget{motionsensor_8h}{}\section{motionsensor.\+h File Reference}
-\label{motionsensor_8h}\index{motionsensor.\+h@{motionsensor.\+h}}
+\hypertarget{motionsensor_8h}{}\section{alarm-\/sensor/motionsensor.h File Reference}
+\label{motionsensor_8h}\index{alarm-\/sensor/motionsensor.\+h@{alarm-\/sensor/motionsensor.\+h}}
 {\ttfamily \#include $<$cmath$>$}\\*
-{\ttfamily \#include $<$iostream$>$}\\*
-{\ttfamily \#include $<$string$>$}\\*
 {\ttfamily \#include \char`\"{}abstractsensor.\+h\char`\"{}}\\*
-Include dependency graph for motionsensor.\+h\+:\nopagebreak
+Include dependency graph for motionsensor.\+h\+:
+\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
@@ -16,6 +15,11 @@ Include dependency graph for motionsensor.\+h\+:\nopagebreak
 \item 
 class \hyperlink{classMotionSensor}{Motion\+Sensor}
 \begin{DoxyCompactList}\small\item\em Motion sensor class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::ostream \& \hyperlink{motionsensor_8h_a460a213e689a60bfd36d00b2dcf308c5}{operator$<$$<$} (std\+::ostream \&lhs, const std\+::shared\+\_\+ptr$<$ \hyperlink{classMotionSensor}{Motion\+Sensor} $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Passes info about the sensor to the output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
@@ -29,3 +33,21 @@ Vladimir Poliakov
 
 Brian Segers 
 \end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\index{motionsensor.\+h@{motionsensor.\+h}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!motionsensor.\+h@{motionsensor.\+h}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(std\+::ostream \&lhs, const std\+::shared\+\_\+ptr$<$ Motion\+Sensor $>$ \&rhs)}{operator<<(std::ostream &lhs, const std::shared_ptr< MotionSensor > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::ostream\& operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{std\+::ostream \&}]{lhs, }
+\item[{const std\+::shared\+\_\+ptr$<$ {\bf Motion\+Sensor} $>$ \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{motionsensor_8h_a460a213e689a60bfd36d00b2dcf308c5}{}\label{motionsensor_8h_a460a213e689a60bfd36d00b2dcf308c5}
+
+
+Passes info about the sensor to the output stream. 
+
+\begin{DoxyNote}{Note}
+This is an overloaded function 
+\end{DoxyNote}

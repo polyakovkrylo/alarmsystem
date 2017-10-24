@@ -27,8 +27,6 @@
 class AlarmComponentGroup : public AlarmComponent
 {
 public:
-    typedef std::shared_ptr<AlarmComponent> SPtr;
-
     /*!
      * \brief Class constructor
      * \param id identificator of the component
@@ -63,19 +61,19 @@ public:
      * \brief Add component to the group
      * \param sptr pointer to the component
      */
-    void add(const SPtr &sptr);
+    void add(const AlarmComponent::SPtr &sptr);
 
     /*!
      * \brief Remove component from the group
      * \param sptr pointer to the component
      */
-    void remove(const SPtr &sptr);
+    void remove(const AlarmComponent::SPtr &sptr);
 
 private:
     /*!
      * \brief list of children
      */
-    std::list<SPtr> children_;
+    std::list<AlarmComponent::SPtr> children_;
 };
 
 #endif // ALARMCOMPONENTGROUP_H

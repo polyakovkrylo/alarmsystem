@@ -101,9 +101,9 @@ Inheritance diagram for SmokeSensor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSmokeSensor__inherit__graph.png" border="0" usemap="#SmokeSensor_inherit__map" alt="Inheritance graph"/></div>
 <map name="SmokeSensor_inherit__map" id="SmokeSensor_inherit__map">
-<area shape="rect" id="node2" href="classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="89,80,201,107"/>
-<area shape="rect" id="node3" href="classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="5,5,128,32"/>
-<area shape="rect" id="node4" href="classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="153,5,295,32"/>
+<area shape="rect" id="node2" href="classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="132,169,244,196"/>
+<area shape="rect" id="node3" href="classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="48,95,171,121"/>
+<area shape="rect" id="node5" href="classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="195,95,338,121"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -111,9 +111,9 @@ Collaboration diagram for SmokeSensor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSmokeSensor__coll__graph.png" border="0" usemap="#SmokeSensor_coll__map" alt="Collaboration graph"/></div>
 <map name="SmokeSensor_coll__map" id="SmokeSensor_coll__map">
-<area shape="rect" id="node2" href="classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="89,80,201,107"/>
-<area shape="rect" id="node3" href="classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="5,5,128,32"/>
-<area shape="rect" id="node4" href="classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="153,5,295,32"/>
+<area shape="rect" id="node2" href="classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="248,185,360,212"/>
+<area shape="rect" id="node3" href="classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="125,109,248,136"/>
+<area shape="rect" id="node6" href="classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="273,109,415,136"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -125,6 +125,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a31bc900b0d1c5c893f8555fdcbe4266b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeSensor.html#a31bc900b0d1c5c893f8555fdcbe4266b">update</a> () override</td></tr>
 <tr class="memdesc:a31bc900b0d1c5c893f8555fdcbe4266b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update of the current value.  <a href="#a31bc900b0d1c5c893f8555fdcbe4266b">More...</a><br /></td></tr>
 <tr class="separator:a31bc900b0d1c5c893f8555fdcbe4266b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cc7e7b2da913abb8aefcd92d50ef046"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2cc7e7b2da913abb8aefcd92d50ef046"></a>
+virtual const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeSensor.html#a2cc7e7b2da913abb8aefcd92d50ef046">getInfo</a> () const override</td></tr>
+<tr class="memdesc:a2cc7e7b2da913abb8aefcd92d50ef046"><td class="mdescLeft">&#160;</td><td class="mdescRight">String stream containing info about the sensor. <br /></td></tr>
+<tr class="separator:a2cc7e7b2da913abb8aefcd92d50ef046"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add325306c6a33436bc9053721cbdb88b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSmokeSensor.html#add325306c6a33436bc9053721cbdb88b">getThreshold</a> () const </td></tr>
+<tr class="memdesc:add325306c6a33436bc9053721cbdb88b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Threshold access function.  <a href="#add325306c6a33436bc9053721cbdb88b">More...</a><br /></td></tr>
+<tr class="separator:add325306c6a33436bc9053721cbdb88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAbstractSensor"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAbstractSensor')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAbstractSensor.html">AbstractSensor</a></td></tr>
 <tr class="memitem:a6ce9232e9b428879bcdee6591eba55e6 inherit pub_methods_classAbstractSensor"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html#a6ce9232e9b428879bcdee6591eba55e6">AbstractSensor</a> (std::string id=&quot;Unknown id&quot;, std::string type=&quot;Unknown type&quot;, std::string vendor=&quot;Unknown vendor&quot;)</td></tr>
 <tr class="memdesc:a6ce9232e9b428879bcdee6591eba55e6 inherit pub_methods_classAbstractSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a6ce9232e9b428879bcdee6591eba55e6">More...</a><br /></td></tr>
@@ -137,14 +144,14 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html#a7f921f96118605def806c40139f5496b">deactivate</a> ()</td></tr>
 <tr class="memdesc:a7f921f96118605def806c40139f5496b inherit pub_methods_classAbstractSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deactivates the sensor, i.e. deactivates alarm strategies. <br /></td></tr>
 <tr class="separator:a7f921f96118605def806c40139f5496b inherit pub_methods_classAbstractSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8e0920accea462f26cdbda13623ef4c1 inherit pub_methods_classAbstractSensor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e0920accea462f26cdbda13623ef4c1"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html#a8e0920accea462f26cdbda13623ef4c1">getVendor</a> ()</td></tr>
-<tr class="memdesc:a8e0920accea462f26cdbda13623ef4c1 inherit pub_methods_classAbstractSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns vendor name. <br /></td></tr>
-<tr class="separator:a8e0920accea462f26cdbda13623ef4c1 inherit pub_methods_classAbstractSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d49d32a83d269c7487de10497f7f94a inherit pub_methods_classAbstractSensor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3d49d32a83d269c7487de10497f7f94a"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html#a3d49d32a83d269c7487de10497f7f94a">getType</a> ()</td></tr>
-<tr class="memdesc:a3d49d32a83d269c7487de10497f7f94a inherit pub_methods_classAbstractSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns type of sensor. <br /></td></tr>
-<tr class="separator:a3d49d32a83d269c7487de10497f7f94a inherit pub_methods_classAbstractSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2786a5387ea8a90f8451cb3a64a3e152 inherit pub_methods_classAbstractSensor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2786a5387ea8a90f8451cb3a64a3e152"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html#a2786a5387ea8a90f8451cb3a64a3e152">getVendor</a> () const </td></tr>
+<tr class="memdesc:a2786a5387ea8a90f8451cb3a64a3e152 inherit pub_methods_classAbstractSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns vendor name. <br /></td></tr>
+<tr class="separator:a2786a5387ea8a90f8451cb3a64a3e152 inherit pub_methods_classAbstractSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f55a2259b24f124b64a3ddd3004d6e inherit pub_methods_classAbstractSensor"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a31f55a2259b24f124b64a3ddd3004d6e"></a>
+const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html#a31f55a2259b24f124b64a3ddd3004d6e">getType</a> () const </td></tr>
+<tr class="memdesc:a31f55a2259b24f124b64a3ddd3004d6e inherit pub_methods_classAbstractSensor"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns type of sensor. <br /></td></tr>
+<tr class="separator:a31f55a2259b24f124b64a3ddd3004d6e inherit pub_methods_classAbstractSensor"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAlarmComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAlarmComponent')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAlarmComponent.html">AlarmComponent</a></td></tr>
 <tr class="memitem:a4d10477bd20bbdb544e8a8ca8128add2 inherit pub_methods_classAlarmComponent"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a4d10477bd20bbdb544e8a8ca8128add2">AlarmComponent</a> (std::string id)</td></tr>
 <tr class="memdesc:a4d10477bd20bbdb544e8a8ca8128add2 inherit pub_methods_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Class constructor.  <a href="#a4d10477bd20bbdb544e8a8ca8128add2">More...</a><br /></td></tr>
@@ -153,10 +160,16 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a51a7a6e0d85da344c741deddfcb7cff3">printInfo</a> ()</td></tr>
 <tr class="memdesc:a51a7a6e0d85da344c741deddfcb7cff3 inherit pub_methods_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print component info. <br /></td></tr>
 <tr class="separator:a51a7a6e0d85da344c741deddfcb7cff3 inherit pub_methods_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24595490fdeecfbdee852c6fa503786d inherit pub_methods_classAlarmComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a24595490fdeecfbdee852c6fa503786d"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a24595490fdeecfbdee852c6fa503786d">getId</a> ()</td></tr>
-<tr class="memdesc:a24595490fdeecfbdee852c6fa503786d inherit pub_methods_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns id of the component. <br /></td></tr>
-<tr class="separator:a24595490fdeecfbdee852c6fa503786d inherit pub_methods_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d576b833767677aef88ac0e53dc5f22 inherit pub_methods_classAlarmComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d576b833767677aef88ac0e53dc5f22"></a>
+const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a7d576b833767677aef88ac0e53dc5f22">getId</a> () const </td></tr>
+<tr class="memdesc:a7d576b833767677aef88ac0e53dc5f22 inherit pub_methods_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns id of the component. <br /></td></tr>
+<tr class="separator:a7d576b833767677aef88ac0e53dc5f22 inherit pub_methods_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab105241dfaade407b9683bb32e8d0f2f inherit pub_methods_classAlarmComponent"><td class="memItemLeft" align="right" valign="top">const SPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#ab105241dfaade407b9683bb32e8d0f2f">getRootComponent</a> ()</td></tr>
+<tr class="memdesc:ab105241dfaade407b9683bb32e8d0f2f inherit pub_methods_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get root object of the group.  <a href="#ab105241dfaade407b9683bb32e8d0f2f">More...</a><br /></td></tr>
+<tr class="separator:ab105241dfaade407b9683bb32e8d0f2f inherit pub_methods_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a23397273077d5808735d083878378a inherit pub_methods_classAlarmComponent"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a8a23397273077d5808735d083878378a">setParent</a> (const SPtr &amp;sptr)</td></tr>
+<tr class="memdesc:a8a23397273077d5808735d083878378a inherit pub_methods_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the parent of the component.  <a href="#a8a23397273077d5808735d083878378a">More...</a><br /></td></tr>
+<tr class="separator:a8a23397273077d5808735d083878378a inherit pub_methods_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classAlarmStrategyOwner"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classAlarmStrategyOwner')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classAlarmStrategyOwner.html">AlarmStrategyOwner</a></td></tr>
 <tr class="memitem:a2e150fb66eda048ece19da4ebf3605cf inherit pub_methods_classAlarmStrategyOwner"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2e150fb66eda048ece19da4ebf3605cf"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmStrategyOwner.html#a2e150fb66eda048ece19da4ebf3605cf">activateStrategies</a> ()</td></tr>
@@ -175,6 +188,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classAlarmComponent"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classAlarmComponent')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classAlarmComponent.html">AlarmComponent</a></td></tr>
+<tr class="memitem:a508e811a15269806af1a18aa4d387128 inherit pub_types_classAlarmComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a508e811a15269806af1a18aa4d387128"></a>
+typedef std::shared_ptr&lt; <a class="el" href="classAlarmComponent.html">AlarmComponent</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SPtr</b></td></tr>
+<tr class="separator:a508e811a15269806af1a18aa4d387128 inherit pub_types_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classAlarmStrategyOwner"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classAlarmStrategyOwner')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classAlarmStrategyOwner.html">AlarmStrategyOwner</a></td></tr>
 <tr class="memitem:aeebd31011e2a6d14a4492315ad15c5ee inherit pub_types_classAlarmStrategyOwner"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aeebd31011e2a6d14a4492315ad15c5ee"></a>
 typedef std::shared_ptr&lt; <a class="el" href="classAlarmStrategy.html">AlarmStrategy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>SPtr</b></td></tr>
@@ -184,6 +201,14 @@ typedef std::shared_ptr&lt; <a class="el" href="classAlarmStrategy.html">AlarmSt
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#aad0807ccc068a68b5cc43bf307689069">id_</a></td></tr>
 <tr class="memdesc:aad0807ccc068a68b5cc43bf307689069 inherit pro_attribs_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">identificator of the component <br /></td></tr>
 <tr class="separator:aad0807ccc068a68b5cc43bf307689069 inherit pro_attribs_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7ef82bfe60f4d31e5f340139ccff1b inherit pro_attribs_classAlarmComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6d7ef82bfe60f4d31e5f340139ccff1b"></a>
+SPtr&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a6d7ef82bfe60f4d31e5f340139ccff1b">parent_</a></td></tr>
+<tr class="memdesc:a6d7ef82bfe60f4d31e5f340139ccff1b inherit pro_attribs_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">parent of the component <br /></td></tr>
+<tr class="separator:a6d7ef82bfe60f4d31e5f340139ccff1b inherit pro_attribs_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a187ca6cd2f8310b5be8000c58934a746 inherit pro_attribs_classAlarmComponent"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a187ca6cd2f8310b5be8000c58934a746"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAlarmComponent.html#a187ca6cd2f8310b5be8000c58934a746">activated_</a></td></tr>
+<tr class="memdesc:a187ca6cd2f8310b5be8000c58934a746 inherit pro_attribs_classAlarmComponent"><td class="mdescLeft">&#160;</td><td class="mdescRight">activation flag <br /></td></tr>
+<tr class="separator:a187ca6cd2f8310b5be8000c58934a746 inherit pro_attribs_classAlarmComponent"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Smoke sensor class. </p>
@@ -232,6 +257,32 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="add325306c6a33436bc9053721cbdb88b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int SmokeSensor::getThreshold </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Threshold access function. </p>
+<dl class="section return"><dt>Returns</dt><dd>current threshold value </dd></dl>
+
+</div>
+</div>
 <a class="anchor" id="a31bc900b0d1c5c893f8555fdcbe4266b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -261,8 +312,8 @@ std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="smokesensor_8h_source.html">smokesensor.h</a></li>
-<li>smokesensor.cpp</li>
+<li>alarm-sensor/<a class="el" href="smokesensor_8h_source.html">smokesensor.h</a></li>
+<li>alarm-sensor/smokesensor.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

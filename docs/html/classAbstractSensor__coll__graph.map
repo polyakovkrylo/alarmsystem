@@ -1,4 +1,4 @@
 <map id="AbstractSensor" name="AbstractSensor">
-<area shape="rect" id="node2" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="5,5,128,32"/>
-<area shape="rect" id="node3" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="153,5,295,32"/>
+<area shape="rect" id="node2" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="125,109,248,136"/>
+<area shape="rect" id="node5" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="273,109,415,136"/>
 </map>
