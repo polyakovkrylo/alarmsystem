@@ -21,17 +21,20 @@ AbstractSensor::~AbstractSensor()
 void AbstractSensor::activate()
 {
     // print sensor's info and activate strategies
-    cout << getId()
-         << " has been activated" << endl;
-    activateStrategies();
+    // TODO: Redundancy of same if{} inside AlarmComponent
+    if(!activated_){
+        AlarmComponent::activate();
+        activateStrategies();
+    }
 }
 
 void AbstractSensor::deactivate()
 {
-    // print sensor's info and deactivate strategies
-    cout << getId()
-         << " has been deactivated" << endl;
-    deactivateStrategies();
+    // TODO: Redundancy of same if{} inside AlarmComponent
+    if(activated_){
+        AlarmComponent::deactivate();
+        deactivateStrategies();
+    }
 }
 
 const string AbstractSensor::getInfo() const

@@ -50,6 +50,11 @@ private:
      * \brief name of the strategy
      */
     std::string name_;
+
+    /*!
+     * \brief activation flag
+     */
+    int activatedCount_;
 };
 
 #endif // ALARMSTRATEGY_H

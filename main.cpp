@@ -36,20 +36,36 @@ int main()
 
     motion->addStrategy(police);
 
+    cout << "Testing multiple activation of a sensor"
+         << "and a strategy..." << endl;
+    smoke->activate();
+    smoke->activate();
+    toxic->activate();
+    smoke->deactivate();
+    toxic->deactivate();
+    cout<<endl;
+
+    cout << "Testing update function..." << endl;
     for(int i = 0; i < 5; i++) {
         smoke->update();
         toxic->update();
         motion->update();
     }
+    smoke->deactivate();
+    toxic->deactivate();
+    motion->deactivate();
+    cout<<endl;
 
-    // Testing overloaded operators
-    cout << "Testing increment and decrement:" << endl;
+    cout << "Testing operator-- and operator++ ..." << endl;
     ++smoke;
     --smoke;
+    cout<<endl;
 
-    cout << "Testing operator<< : " << endl;
+    cout << "Testing operator<< ..." << endl;
     cout << smoke;
+    cout<<endl;
     cout << motion;
+    cout<<endl;
     cout << toxic;
     return 0;
 }

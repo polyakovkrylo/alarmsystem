@@ -30,7 +30,6 @@ class CallFiremen : public AlarmStrategy
 {
 public:
     CallFiremen();
-    virtual void activate() override final;
-    virtual void deactivate() override final;
+    ~CallFiremen();
 };
 #endif // CALLFIREMEN_H

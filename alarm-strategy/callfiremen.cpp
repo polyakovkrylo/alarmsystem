@@ -9,12 +9,7 @@ CallFiremen::CallFiremen() :
 
 }
 
-void CallFiremen::activate()
+CallFiremen::~CallFiremen()
 {
-     cout << "Calling firemen..." << endl;
-}
 
-void CallFiremen::deactivate()
-{
-     cout << "Deactivating calling firemen..." << endl;
 }

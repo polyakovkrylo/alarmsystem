@@ -56,13 +56,18 @@ public:
     /*!
      * \brief Returns id of the component
      */
-    std::string getId() const {return id_;}
+    const std::string & getId() const {return id_;}
 
 protected:
     /*!
      * \brief identificator of the component
      */
     std::string id_;
+
+    /*!
+     * \brief activation flag
+     */
+    bool activated_;
 };
 
 #endif // ALARMCOMPONENT_H

@@ -29,9 +29,7 @@ class CallPolice : public AlarmStrategy
 {
 public:
     CallPolice();
-
-    virtual void activate() override final;
-    virtual void deactivate() override final;
+    ~CallPolice();
 };
 
 #endif // CALLPOLICE_H

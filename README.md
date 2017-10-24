@@ -55,7 +55,8 @@ strategy. Context is implemented in
   * [x] Implement operator++
   * [x] Implement operator--
   * [x] Implement operator<< for each type of sensor
-* [ ] Add activation flag to AbstractSensor
+* [x] Add activation flag to AlarmComponent and activation counter
+to AlarmStrategy
 * [ ] Implement Observer structure
 * [ ] Parent attribute for AlarmComponent
 * [ ] Sorting and search algorithms

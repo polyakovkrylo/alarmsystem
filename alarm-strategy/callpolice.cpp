@@ -9,12 +9,7 @@ CallPolice::CallPolice() :
 
 }
 
-void CallPolice::activate()
+CallPolice::~CallPolice()
 {
-     cout << "Calling police..." << endl;
-}
 
-void CallPolice::deactivate()
-{
-     cout << "Deactivating calling police..." << endl;
 }
