@@ -57,7 +57,7 @@ void AlarmComponent::deactivate()
     }
 }
 
-void AlarmComponent::printInfo() const
+void AlarmComponent::printInfo()
 {
     cout << id_ << endl;
 }

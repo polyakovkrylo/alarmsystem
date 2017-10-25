@@ -56,7 +56,7 @@ public:
     /*!
      * \brief Print component info
      */
-    virtual void printInfo() const;
+    virtual void printInfo();
 
     /*!
      * \brief Returns id of the component

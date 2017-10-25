@@ -66,7 +66,7 @@ public:
     /*!
      * \brief String stream containing info about the sensor
      */
-    virtual const std::string getInfo() const override;
+    virtual const std::string getInfo() override;
 
     /*!
      * \brief Returns string that contains name of gas

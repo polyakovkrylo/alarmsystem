@@ -52,7 +52,7 @@ public:
     /*!
      * \brief String stream containing info about the sensor
      */
-    virtual const std::string getInfo() const override;
+    virtual const std::string getInfo() override;
 
     /*!
      * \brief Threshold access function

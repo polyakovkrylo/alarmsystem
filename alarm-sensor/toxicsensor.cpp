@@ -58,7 +58,7 @@ const string ToxicSensor::getGasType() const
     return result;
 }
 
-const string ToxicSensor::getInfo() const
+const string ToxicSensor::getInfo()
 {
     stringstream result;
     result << AbstractSensor::getInfo()

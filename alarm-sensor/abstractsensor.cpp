@@ -29,7 +29,7 @@ AbstractSensor::~AbstractSensor()
 
 }
 
-void AbstractSensor::printInfo() const
+void AbstractSensor::printInfo()
 {
     cout << getInfo() << endl;
 }
@@ -53,11 +53,12 @@ void AbstractSensor::deactivate()
     }
 }
 
-const string AbstractSensor::getInfo() const
+const string AbstractSensor::getInfo()
 {
     stringstream result;
     result << getId()
            << " of type " << getType() << endl
+           << "Located in " << getRootComponent()->getId() << endl
            << "Manufactured by " << getVendor() << endl;
     return result.str();
 }
@@ -80,4 +81,17 @@ bool compare_type(const AlarmComponent::SPtr &sptr1,
 {
     return (std::dynamic_pointer_cast<AbstractSensor>(sptr1)->getType()
             < std::dynamic_pointer_cast<AbstractSensor>(sptr2)->getType());
+}
+
+bool compare_vendor_id(const AlarmComponent::SPtr &sptr1,
+                       const AlarmComponent::SPtr &sptr2)
+{
+    std::shared_ptr<AbstractSensor> s1 =
+            std::dynamic_pointer_cast<AbstractSensor>(sptr1);
+    std::shared_ptr<AbstractSensor> s2 =
+            std::dynamic_pointer_cast<AbstractSensor>(sptr2);
+    if(s1->getVendor() != s2->getVendor())
+        return s1->getVendor() < s2->getVendor();
+    else
+        return (s1->getId() < s2->getId());
 }

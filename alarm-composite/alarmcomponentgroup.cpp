@@ -48,7 +48,7 @@ void AlarmComponentGroup::deactivate()
     }
 }
 
-void AlarmComponentGroup::printInfo() const
+void AlarmComponentGroup::printInfo()
 {
     // print info about *this instance has been
     // activated and activate each child.

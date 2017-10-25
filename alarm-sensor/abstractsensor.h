@@ -63,7 +63,7 @@ public:
     /*!
      * \brief Prints info about the sensor
      */
-    virtual void printInfo() const override;
+    virtual void printInfo() override;
 
     /*!
      * \brief Pure virtual function to be defined in implementation class
@@ -92,7 +92,7 @@ public:
     /*!
      * \brief String stream containing info about the sensor
      */
-    virtual const std::string getInfo() const;
+    virtual const std::string getInfo();
 
 private:
     /*!
@@ -134,5 +134,8 @@ bool compare_vendor(const AlarmComponent::SPtr &sptr1,
 
 bool compare_type(const AlarmComponent::SPtr &sptr1,
                     const AlarmComponent::SPtr &sptr2);
+
+bool compare_vendor_id(const AlarmComponent::SPtr &sptr1,
+                       const AlarmComponent::SPtr &sptr2);
 
 #endif // ALARMSENSOR_H

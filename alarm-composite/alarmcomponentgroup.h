@@ -55,7 +55,7 @@ public:
      * Print info about the group, including
      * info about each component inside the group
      */
-    virtual void printInfo() const override;
+    virtual void printInfo() override;
 
     /*!
      * \brief Add component to the group

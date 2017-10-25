@@ -41,7 +41,7 @@ void MotionSensor::update()
     }
 }
 
-string const MotionSensor::getInfo() const
+string const MotionSensor::getInfo()
 {
     stringstream result;
     result << AbstractSensor::getInfo()

@@ -39,7 +39,7 @@ void SmokeSensor::update()
     }
 }
 
-const string SmokeSensor::getInfo() const
+const string SmokeSensor::getInfo()
 {
     stringstream result;
     result << AbstractSensor::getInfo()
