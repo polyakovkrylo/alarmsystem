@@ -19,39 +19,60 @@ int main()
     // of different types.
     auto building = make_shared<AlarmComponentGroup>("Building 1");
 
-    auto room = make_shared<AlarmComponentGroup>("Room 1");
+    auto room1 = make_shared<AlarmComponentGroup>("Room 1");
     auto room2 = make_shared<AlarmComponentGroup>("Room 2");
+    auto room3 = make_shared<AlarmComponentGroup>("Room 3");
 
-    auto smoke = make_shared<SmokeSensor>(10, "SM1", "Vendor1");
-    auto toxic = make_shared<ToxicSensor>(ToxicSensor::Chlorine, 10, "TOX1", "Vendor1");
-    auto motion = make_shared<MotionSensor>(10, 15, "MOT1", "Vendor2");
+    auto smoke1 = make_shared<SmokeSensor>(10, "SM1", "Vendor1");
+    auto smoke2 = make_shared<SmokeSensor>(15, "SM2", "Vendor 3");
+    auto smoke3 = make_shared<SmokeSensor>(12, "SM3", "Vendor 2");
+    auto smoke4 = make_shared<SmokeSensor>(15, "SM4", "Vendor 2");
+    auto toxic1 = make_shared<ToxicSensor>(ToxicSensor::Chlorine, 15, "TOX1", "Vendor1");
+    auto toxic2 = make_shared<ToxicSensor>(ToxicSensor::Bromine, 8, "TOX2", "Vendor3");
+    auto toxic3 = make_shared<ToxicSensor>(ToxicSensor::Bromine, 17, "TOX3", "Vendor3");
+    auto toxic4 = make_shared<ToxicSensor>(ToxicSensor::Chlorine, 7, "TOX4", "Vendor1");
+    auto motion1 = make_shared<MotionSensor>(8, 15, "MOT1", "Vendor2");
+    auto motion2 = make_shared<MotionSensor>(7, 25, "MOT2", "Vendor1");
+    auto motion3 = make_shared<MotionSensor>(17, 18, "MOT3", "Vendor2");
+    auto motion4 = make_shared<MotionSensor>(8, 15, "MOT4", "Vendor4");
 
-    building->add(room);
+
+    building->add(room1);
     building->add(room2);
-    building->add(smoke);
-    room->add(toxic);
-    room2->add(motion);
+    building->add(smoke1);
+    room1->add(toxic1);
+    room1->add(toxic4);
+    room1->add(motion3);
+    room2->add(motion1);
+    room2->add(toxic2);
+    room2->add(motion2);
+    room3->add(smoke2);
+    room3->add(toxic3);
+    room3->add(smoke3);
+    room3->add(smoke4);
+    room3->add(motion4);
+
 
     // Firt test parentness
     cout << "Testing parentness ..." << endl;
-    cout << "Root component of " << smoke->getId()
-         << " is " << smoke->getRootComponent()->getId() << endl;
+    cout << "Root component of " << smoke1->getId()
+         << " is " << smoke1->getRootComponent()->getId() << endl;
     cout<<endl;
 
     // Now test observers and strategies
     auto signal = make_shared<AlarmSignal>();
     auto water = make_shared<WaterDispenser>();
 
-    smoke->addStrategy(water);
-    smoke->addStrategy(signal);
-    toxic->addStrategy(water);
-    motion->addStrategy(signal);
+    smoke1->addStrategy(water);
+    smoke1->addStrategy(signal);
+    toxic1->addStrategy(water);
+    motion1->addStrategy(signal);
 
     auto police = make_shared<AlarmObserver>("Police");
     auto fire = make_shared<AlarmObserver>("Firemen");
 
-    room->addObserver(police);
-    smoke->addObserver(fire);
+    room1->addObserver(police);
+    smoke1->addObserver(fire);
 
 //    cout << "Testing observers and strategies..." << endl;
 //    smoke->activate();
