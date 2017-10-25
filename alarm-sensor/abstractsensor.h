@@ -105,15 +105,15 @@ private:
  * \brief Same as AbstractSensor::activate()
  * \note This is an overloaded function
  */
-inline void operator++(const std::shared_ptr<AbstractSensor> & rhs)
-{rhs->activate();}
+inline const std::shared_ptr<AbstractSensor> & operator++(const std::shared_ptr<AbstractSensor> & rhs)
+{rhs->activate(); return rhs;}
 
 /*!
  * \brief Same as AbstractSensor::deactivate()
  * \note This is an overloaded function
  */
-inline void operator--(const std::shared_ptr<AbstractSensor> & rhs)
-{rhs->deactivate();}
+inline const std::shared_ptr<AbstractSensor> & operator--(const std::shared_ptr<AbstractSensor> & rhs)
+{rhs->deactivate(); return rhs;}
 
 // How to make it work uniformely for successors?
 /*!
