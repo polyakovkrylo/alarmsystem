@@ -14,6 +14,8 @@
 
 using std::cout;
 using std::string;
+using std::shared_ptr;
+using std::list;
 
 AlarmComponentGroup::AlarmComponentGroup(string id) :
     AlarmComponent(id)
@@ -66,6 +68,23 @@ void AlarmComponentGroup::remove(const AlarmComponent::SPtr &sptr)
 {
     sptr->setParent(nullptr);
     children_.remove(sptr);
+}
+
+const list<AlarmComponent::SPtr> AlarmComponentGroup::getSensors()
+{
+    list<SPtr> result;
+    for(SPtr comp : children_) {
+        std::shared_ptr<AlarmComponentGroup> group =
+                std::dynamic_pointer_cast<AlarmComponentGroup>(comp);
+        if(group==nullptr){
+            // Cast failed
+            result.push_back(comp);
+        }else{
+            list<SPtr> gres = group->getSensors();
+            result.splice(result.end(), gres);
+        }
+    }
+    return result;
 }
 
 

@@ -61,19 +61,22 @@ public:
      * \brief Add component to the group
      * \param sptr pointer to the component
      */
-    void add(const AlarmComponent::SPtr &sptr);
+    void add(const SPtr &sptr);
 
     /*!
      * \brief Remove component from the group
      * \param sptr pointer to the component
      */
-    void remove(const AlarmComponent::SPtr &sptr);
+    void remove(const SPtr &sptr);
+
+    const std::list<SPtr> getSensors();
+
 
 private:
     /*!
      * \brief list of children
      */
-    std::list<AlarmComponent::SPtr> children_;
+    std::list<SPtr> children_;
 };
 
 #endif // ALARMCOMPONENTGROUP_H

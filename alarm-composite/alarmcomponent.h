@@ -109,4 +109,6 @@ protected:
     bool activated_;
 };
 
+bool compare_id(const AlarmComponent::SPtr &sptr1, const AlarmComponent::SPtr &sptr2);
+
 #endif // ALARMCOMPONENT_H

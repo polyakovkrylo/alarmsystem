@@ -80,3 +80,8 @@ void AlarmComponent::notify(const std::string msg)
     if(parent_!=nullptr)
         parent_->notify(msg);
 }
+
+bool compare_id(const AlarmComponent::SPtr &sptr1, const AlarmComponent::SPtr &sptr2)
+{
+    return (sptr1->getId() < sptr2->getId());
+}

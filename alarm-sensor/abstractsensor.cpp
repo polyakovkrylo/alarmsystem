@@ -29,6 +29,11 @@ AbstractSensor::~AbstractSensor()
 
 }
 
+void AbstractSensor::printInfo() const
+{
+    cout << getInfo() << endl;
+}
+
 void AbstractSensor::activate()
 {
     // print sensor's info and activate strategies
@@ -61,4 +66,18 @@ ostream & operator<<(ostream & lhs, const shared_ptr<AbstractSensor> & rhs)
 {
     lhs<<rhs->getInfo();
     return lhs;
+}
+
+bool compare_vendor(const AlarmComponent::SPtr &sptr1,
+                    const AlarmComponent::SPtr &sptr2)
+{
+    return (std::dynamic_pointer_cast<AbstractSensor>(sptr1)->getVendor()
+            < std::dynamic_pointer_cast<AbstractSensor>(sptr2)->getVendor());
+}
+
+bool compare_type(const AlarmComponent::SPtr &sptr1,
+                    const AlarmComponent::SPtr &sptr2)
+{
+    return (std::dynamic_pointer_cast<AbstractSensor>(sptr1)->getType()
+            < std::dynamic_pointer_cast<AbstractSensor>(sptr2)->getType());
 }

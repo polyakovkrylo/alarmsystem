@@ -61,6 +61,11 @@ public:
     virtual ~AbstractSensor() override;
 
     /*!
+     * \brief Prints info about the sensor
+     */
+    virtual void printInfo() const override;
+
+    /*!
      * \brief Pure virtual function to be defined in implementation class
      */
     virtual void update() = 0;
@@ -123,5 +128,11 @@ inline const std::shared_ptr<AbstractSensor> & operator--(const std::shared_ptr<
  */
 std::ostream & operator<<(std::ostream & lhs,
                           const std::shared_ptr<AbstractSensor> & rhs);
+
+bool compare_vendor(const AlarmComponent::SPtr &sptr1,
+                    const AlarmComponent::SPtr &sptr2);
+
+bool compare_type(const AlarmComponent::SPtr &sptr1,
+                    const AlarmComponent::SPtr &sptr2);
 
 #endif // ALARMSENSOR_H
