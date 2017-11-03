@@ -118,7 +118,18 @@ int main()
 
     cout << "Testing getSensors() ..." << endl;
     list<AlarmComponent::SPtr> sortedlist = building->getSensors();
-    sortedlist.sort(compare_type);
+    sortedlist.sort(
+                [] (auto lhs, auto rhs) -> bool
+    {
+        std::shared_ptr<AbstractSensor> s1 =
+                std::dynamic_pointer_cast<AbstractSensor>(lhs);
+        std::shared_ptr<AbstractSensor> s2 =
+                std::dynamic_pointer_cast<AbstractSensor>(rhs);
+        if(s1->getVendor() != s2->getVendor())
+            return s1->getVendor() < s2->getVendor();
+        else
+            return (s1->getId() < s2->getId());
+    });
     for(AlarmComponent::SPtr comp : sortedlist){
         comp->printInfo();
     }
