@@ -68,30 +68,3 @@ ostream & operator<<(ostream & lhs, const shared_ptr<AbstractSensor> & rhs)
     lhs<<rhs->getInfo();
     return lhs;
 }
-
-bool compare_vendor(const AlarmComponent::SPtr &sptr1,
-                    const AlarmComponent::SPtr &sptr2)
-{
-    return (std::dynamic_pointer_cast<AbstractSensor>(sptr1)->getVendor()
-            < std::dynamic_pointer_cast<AbstractSensor>(sptr2)->getVendor());
-}
-
-bool compare_type(const AlarmComponent::SPtr &sptr1,
-                    const AlarmComponent::SPtr &sptr2)
-{
-    return (std::dynamic_pointer_cast<AbstractSensor>(sptr1)->getType()
-            < std::dynamic_pointer_cast<AbstractSensor>(sptr2)->getType());
-}
-
-bool compare_vendor_id(const AlarmComponent::SPtr &sptr1,
-                       const AlarmComponent::SPtr &sptr2)
-{
-    std::shared_ptr<AbstractSensor> s1 =
-            std::dynamic_pointer_cast<AbstractSensor>(sptr1);
-    std::shared_ptr<AbstractSensor> s2 =
-            std::dynamic_pointer_cast<AbstractSensor>(sptr2);
-    if(s1->getVendor() != s2->getVendor())
-        return s1->getVendor() < s2->getVendor();
-    else
-        return (s1->getId() < s2->getId());
-}

@@ -15,7 +15,7 @@ int main()
 {
     // Testing funtion.
     // Includes one building with
-    // one room with 3 sensors
+    // two room with a bunch of sensors
     // of different types.
     auto building = make_shared<AlarmComponentGroup>("Building 1");
 
@@ -74,62 +74,66 @@ int main()
     room1->addObserver(police);
     smoke1->addObserver(fire);
 
-//    cout << "Testing observers and strategies..." << endl;
-//    smoke->activate();
-//    toxic->activate();
-//    motion->activate();
+    cout << "Testing observers and strategies..." << endl;
+    smoke1->activate();
+    toxic1->activate();
+    motion1->activate();
 
-//    // We try activate to activate it twice,
-//    // but sensors should be only activated once
-//    smoke->activate();
-//    toxic->activate();
-//    motion->activate();
+    // We try activate to activate it twice,
+    // but sensors should be only activated once
+    smoke1->activate();
+    toxic1->activate();
+    motion1->activate();
 
-//    smoke->deactivate();
-//    toxic->deactivate();
-//    motion->deactivate();
-//    cout<<endl;
+    smoke1->deactivate();
+    toxic1->deactivate();
+    motion1->deactivate();
+    cout<<endl;
 
 
-//    // Now test update()
-//    cout << "Testing update function..." << endl;
-//    for(int i = 0; i < 5; i++) {
-//        smoke->update();
-//        toxic->update();
-//        motion->update();
-//    }
-//    smoke->deactivate();
-//    toxic->deactivate();
-//    motion->deactivate();
-//    cout<<endl;
+    // Now test update()
+    cout << "Testing update function..." << endl;
+    for(int i = 0; i < 5; i++) {
+        smoke1->update();
+        toxic1->update();
+        motion1->update();
+    }
+    smoke1->deactivate();
+    toxic1->deactivate();
+    motion1->deactivate();
+    cout<<endl;
 
-//    // Finally, test overloaded operators
-//    cout << "Testing operator-- and operator++ ..." << endl;
-//    ++smoke;
-//    --smoke;
-//    cout<<endl;
+    // Test overloaded operators
+    cout << "Testing operator-- and operator++ ..." << endl;
+    ++smoke1;
+    --smoke1;
+    cout<<endl;
 
-//    cout << "Testing operator<< ..." << endl;
-//    cout << smoke;
-//    cout<<endl;
-//    cout << motion;
-//    cout<<endl;
-//    cout << toxic;
+    cout << "Testing operator<< ..." << endl;
+    cout << smoke1;
+    cout<<endl;
+    cout << motion1;
+    cout<<endl;
+    cout << toxic1;
 
     cout << "Testing getSensors() ..." << endl;
+
     list<AlarmComponent::SPtr> sortedlist = building->getSensors();
-    sortedlist.sort(
-                [] (auto lhs, auto rhs) -> bool
-    {
-        std::shared_ptr<AbstractSensor> s1 =
-                std::dynamic_pointer_cast<AbstractSensor>(lhs);
-        std::shared_ptr<AbstractSensor> s2 =
-                std::dynamic_pointer_cast<AbstractSensor>(rhs);
-        if(s1->getVendor() != s2->getVendor())
-            return s1->getVendor() < s2->getVendor();
-        else
-            return (s1->getId() < s2->getId());
-    });
+    sortedlist.sort(compareByVendorByType());
+//  Other option is to use lambda
+//    sortedlist.sort(
+//                [] (auto lhs, auto rhs) -> bool
+//    {
+//        std::shared_ptr<AbstractSensor> s1 =
+//                std::dynamic_pointer_cast<AbstractSensor>(lhs);
+//        std::shared_ptr<AbstractSensor> s2 =
+//                std::dynamic_pointer_cast<AbstractSensor>(rhs);
+//        if(s1->getVendor() != s2->getVendor())
+//            return s1->getVendor() < s2->getVendor();
+//        else
+//            return (s1->getId() < s2->getId());
+//    });
+
     for(AlarmComponent::SPtr comp : sortedlist){
         comp->printInfo();
     }
