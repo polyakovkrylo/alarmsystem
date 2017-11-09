@@ -3,10 +3,16 @@
 ## Description
 
 This is the Alarm System implementation for Lab 2 of Media Processing course.
+
+## Usage
+
+Build libraries project in `src` and install it by running `make install` in
+build directory. Afterwards test project can be built and run.
+
+## Main class diagram:
+
 Following diagram represents the model of the system divided
 into packages. Each package reprsesents separate module.
-
-### Main class diagram:
 
 ![img def](uml/alarmsystem/Main.png)
 
