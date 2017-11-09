@@ -26,7 +26,7 @@ AlarmObserver::~AlarmObserver()
 
 }
 
-void AlarmObserver::handle(const string msg)
+void AlarmObserver::handle(const string &msg)
 {
     cout << endl << name_ << " received: " << endl
          << msg << endl;
