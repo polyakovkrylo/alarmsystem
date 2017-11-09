@@ -2,7 +2,8 @@ var searchData=
 [
   ['getgastype',['getGasType',['../classToxicSensor.html#a1f49ce67d6f7d871249b7d817940f6b8',1,'ToxicSensor']]],
   ['getid',['getId',['../classAlarmComponent.html#a7d576b833767677aef88ac0e53dc5f22',1,'AlarmComponent']]],
-  ['getinfo',['getInfo',['../classAbstractSensor.html#a3b498785d810c29b3d20254a365adb43',1,'AbstractSensor::getInfo()'],['../classMotionSensor.html#a9b0a0233e5ccfb714cf5d10acfc0e188',1,'MotionSensor::getInfo()'],['../classSmokeSensor.html#a2cc7e7b2da913abb8aefcd92d50ef046',1,'SmokeSensor::getInfo()'],['../classToxicSensor.html#a544cfac25f1c5aa8c5e37de4ea4641b8',1,'ToxicSensor::getInfo()']]],
+  ['getinfo',['getInfo',['../classAbstractSensor.html#a8ffd3cb0ec2f1740466cab60db318d4a',1,'AbstractSensor::getInfo()'],['../classMotionSensor.html#a800b65765d7d5064b6b06d9c4e8c5bf2',1,'MotionSensor::getInfo()'],['../classSmokeSensor.html#ae7151069c8a66de157f9d66da631412c',1,'SmokeSensor::getInfo()'],['../classToxicSensor.html#abd9e11dc07b3456915ca261dc61071ac',1,'ToxicSensor::getInfo()']]],
+  ['getleafcomponents',['getLeafComponents',['../classAlarmComponentGroup.html#a5d2444572da09104bc5d9640db533324',1,'AlarmComponentGroup']]],
   ['getmaxdistance',['getMaxDistance',['../classMotionSensor.html#af095104075a3e5cb7c6c6466c8813f26',1,'MotionSensor']]],
   ['getmindistance',['getMinDistance',['../classMotionSensor.html#aa19bf311e57fc21276d2eb74190cb709',1,'MotionSensor']]],
   ['getrootcomponent',['getRootComponent',['../classAlarmComponent.html#ab105241dfaade407b9683bb32e8d0f2f',1,'AlarmComponent']]],

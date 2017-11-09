@@ -111,7 +111,6 @@ inline const std::shared_ptr<AbstractSensor> & operator++(const std::shared_ptr<
 inline const std::shared_ptr<AbstractSensor> & operator--(const std::shared_ptr<AbstractSensor> & rhs)
 {rhs->deactivate(); return rhs;}
 
-// How to make it work uniformely for successors?
 /*!
  * \ingroup AlarmSensor
  * \brief Passes info about the sensor to the output stream
@@ -120,6 +119,10 @@ inline const std::shared_ptr<AbstractSensor> & operator--(const std::shared_ptr<
 std::ostream & operator<<(std::ostream & lhs,
                           const std::shared_ptr<AbstractSensor> & rhs);
 
+/*!
+ * \ingroup AlarmSensor
+ * \brief Sorting by vendor functor for AlarmSensors
+ */
 class compareByVendor
 {
 public:
@@ -130,6 +133,10 @@ public:
     }
 };
 
+/*!
+ * \ingroup AlarmSensor
+ * \brief Sorting by type functor for AlarmSensors
+ */
 class compareByType
 {
 public:
@@ -140,6 +147,10 @@ public:
     }
 };
 
+/*!
+ * \ingroup AlarmSensor
+ * \brief Sorting by vendor by type functor for AlarmSensors
+ */
 class compareByVendorByType
 {
 public:

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['smokesensor',['SmokeSensor',['../classSmokeSensor.html',1,'']]]
+  ['motionsensor',['MotionSensor',['../classMotionSensor.html',1,'']]]
 ];

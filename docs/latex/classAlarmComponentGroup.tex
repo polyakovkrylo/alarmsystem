@@ -15,7 +15,7 @@ Inheritance diagram for Alarm\+Component\+Group\+:\nopagebreak
 \begin{figure}[H]
 \begin{center}
 \leavevmode
-\includegraphics[width=346pt]{classAlarmComponentGroup__inherit__graph}
+\includegraphics[width=350pt]{classAlarmComponentGroup__inherit__graph}
 \end{center}
 \end{figure}
 
@@ -36,13 +36,15 @@ virtual void \hyperlink{classAlarmComponentGroup_ac67076993e9068dc15e8d39af29698
 \begin{DoxyCompactList}\small\item\em Activation of the component group. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classAlarmComponentGroup_a673cebdc7e32c522af0e7435786ea118}{deactivate} () finaloverride
 \begin{DoxyCompactList}\small\item\em Dectivation of the component group. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classAlarmComponentGroup_a76c37915b10d54349ebf246fddbc603a}{print\+Info} () const override\hypertarget{classAlarmComponentGroup_a76c37915b10d54349ebf246fddbc603a}{}\label{classAlarmComponentGroup_a76c37915b10d54349ebf246fddbc603a}
+virtual void \hyperlink{classAlarmComponentGroup_a07b07cb3f5b41360e3aaf83b9d0938b1}{print\+Info} () override\hypertarget{classAlarmComponentGroup_a07b07cb3f5b41360e3aaf83b9d0938b1}{}\label{classAlarmComponentGroup_a07b07cb3f5b41360e3aaf83b9d0938b1}
 
 \begin{DoxyCompactList}\small\item\em Print info about the group Print info about the group, including info about each component inside the group. \end{DoxyCompactList}\item 
-void \hyperlink{classAlarmComponentGroup_ac07c12720297df1bbf1e131af6631049}{add} (const Alarm\+Component\+::\+S\+Ptr \&sptr)
+void \hyperlink{classAlarmComponentGroup_a8e6775dd15144e3a09396cfd5592779c}{add} (const S\+Ptr \&sptr)
 \begin{DoxyCompactList}\small\item\em Add component to the group. \end{DoxyCompactList}\item 
-void \hyperlink{classAlarmComponentGroup_a4e6c27c533e73d95fe622ca8ed89a9ae}{remove} (const Alarm\+Component\+::\+S\+Ptr \&sptr)
-\begin{DoxyCompactList}\small\item\em Remove component from the group. \end{DoxyCompactList}\end{DoxyCompactItemize}
+void \hyperlink{classAlarmComponentGroup_a39378037a74da6477fb01f2965fe67da}{remove} (const S\+Ptr \&sptr)
+\begin{DoxyCompactList}\small\item\em Remove component from the group. \end{DoxyCompactList}\item 
+const std\+::list$<$ S\+Ptr $>$ \hyperlink{classAlarmComponentGroup_a5d2444572da09104bc5d9640db533324}{get\+Leaf\+Components} ()
+\begin{DoxyCompactList}\small\item\em Returns list of leaf components. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
@@ -86,11 +88,11 @@ Reimplemented from \hyperlink{classAlarmComponent_ab2acf6b580efe04bd617580ecb732
 
 \index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!add@{add}}
 \index{add@{add}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
-\subsubsection[{\texorpdfstring{add(const Alarm\+Component\+::\+S\+Ptr \&sptr)}{add(const AlarmComponent::SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::add (
+\subsubsection[{\texorpdfstring{add(const S\+Ptr \&sptr)}{add(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::add (
 \begin{DoxyParamCaption}
-\item[{const Alarm\+Component\+::\+S\+Ptr \&}]{sptr}
+\item[{const S\+Ptr \&}]{sptr}
 \end{DoxyParamCaption}
-)}\hypertarget{classAlarmComponentGroup_ac07c12720297df1bbf1e131af6631049}{}\label{classAlarmComponentGroup_ac07c12720297df1bbf1e131af6631049}
+)}\hypertarget{classAlarmComponentGroup_a8e6775dd15144e3a09396cfd5592779c}{}\label{classAlarmComponentGroup_a8e6775dd15144e3a09396cfd5592779c}
 
 
 Add component to the group. 
@@ -115,13 +117,24 @@ Print message with id of the group and deativate each component in the group
 
 Reimplemented from \hyperlink{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}{Alarm\+Component}.
 
-\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!remove@{remove}}
-\index{remove@{remove}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
-\subsubsection[{\texorpdfstring{remove(const Alarm\+Component\+::\+S\+Ptr \&sptr)}{remove(const AlarmComponent::SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::remove (
+\index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!get\+Leaf\+Components@{get\+Leaf\+Components}}
+\index{get\+Leaf\+Components@{get\+Leaf\+Components}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{get\+Leaf\+Components()}{getLeafComponents()}}]{\setlength{\rightskip}{0pt plus 5cm}const list$<$ Alarm\+Component\+::\+S\+Ptr $>$ Alarm\+Component\+Group\+::get\+Leaf\+Components (
 \begin{DoxyParamCaption}
-\item[{const Alarm\+Component\+::\+S\+Ptr \&}]{sptr}
+{}
 \end{DoxyParamCaption}
-)}\hypertarget{classAlarmComponentGroup_a4e6c27c533e73d95fe622ca8ed89a9ae}{}\label{classAlarmComponentGroup_a4e6c27c533e73d95fe622ca8ed89a9ae}
+)}\hypertarget{classAlarmComponentGroup_a5d2444572da09104bc5d9640db533324}{}\label{classAlarmComponentGroup_a5d2444572da09104bc5d9640db533324}
+
+
+Returns list of leaf components. 
+
+Returns list of leaf components in group and all its subgroups \index{Alarm\+Component\+Group@{Alarm\+Component\+Group}!remove@{remove}}
+\index{remove@{remove}!Alarm\+Component\+Group@{Alarm\+Component\+Group}}
+\subsubsection[{\texorpdfstring{remove(const S\+Ptr \&sptr)}{remove(const SPtr &sptr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Alarm\+Component\+Group\+::remove (
+\begin{DoxyParamCaption}
+\item[{const S\+Ptr \&}]{sptr}
+\end{DoxyParamCaption}
+)}\hypertarget{classAlarmComponentGroup_a39378037a74da6477fb01f2965fe67da}{}\label{classAlarmComponentGroup_a39378037a74da6477fb01f2965fe67da}
 
 
 Remove component from the group. 

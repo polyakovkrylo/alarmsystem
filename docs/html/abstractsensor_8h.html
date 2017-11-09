@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li class="current"><a href="files.html"><span>Files</span></a></li>
@@ -104,11 +103,11 @@ Include dependency graph for abstractsensor.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="abstractsensor_8h__incl.png" border="0" usemap="#alarm-sensor_2abstractsensor_8h" alt=""/></div>
 <map name="alarm-sensor_2abstractsensor_8h" id="alarm-sensor_2abstractsensor_8h">
-<area shape="rect" id="node6" href="alarmcomponent_8h.html" title="alarm&#45;composite/alarmcomponent.h" alt="" coords="106,80,336,107"/>
+<area shape="rect" id="node6" href="alarmcomponent_8h.html" title="alarm&#45;composite/alarmcomponent.h" alt="" coords="117,80,346,107"/>
 <area shape="rect" id="node10" href="alarmstrategyowner_8h.html" title="alarm&#45;strategy/alarmstrategyowner.h" alt="" coords="482,155,717,181"/>
-<area shape="rect" id="node7" href="alarmobservable_8h.html" title="alarm&#45;observer/alarmobservable.h" alt="" coords="240,155,458,181"/>
+<area shape="rect" id="node7" href="alarmobservable_8h.html" title="alarm&#45;observer/alarmobservable.h" alt="" coords="239,155,458,181"/>
 <area shape="rect" id="node9" href="alarmobserver_8h.html" title="alarmobserver.h" alt="" coords="338,229,453,256"/>
-<area shape="rect" id="node11" href="alarmstrategy_8h.html" title="alarmstrategy.h" alt="" coords="544,229,656,256"/>
+<area shape="rect" id="node11" href="alarmstrategy_8h.html" title="alarmstrategy.h" alt="" coords="543,229,655,256"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -133,15 +132,24 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classAbstractSensor.html">AbstractSensor</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract sensor class.  <a href="classAbstractSensor.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcompareByVendor.html">compareByVendor</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorting by vendor functor for AlarmSensors.  <a href="classcompareByVendor.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcompareByType.html">compareByType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorting by type functor for AlarmSensors.  <a href="classcompareByType.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classcompareByVendorByType.html">compareByVendorByType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sorting by vendor by type functor for AlarmSensors.  <a href="classcompareByVendorByType.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a37eac5a9a92f86e3d8e6f235231845ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abstractsensor_8h.html#a37eac5a9a92f86e3d8e6f235231845ce">operator++</a> (const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:a37eac5a9a92f86e3d8e6f235231845ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classAbstractSensor.html#a0071c6499b1538713bb46d07f0b30ca1" title="Activates the sensor, i.e. activates alarm strategies. ">AbstractSensor::activate()</a>  <a href="#a37eac5a9a92f86e3d8e6f235231845ce">More...</a><br /></td></tr>
-<tr class="separator:a37eac5a9a92f86e3d8e6f235231845ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a03e0e338bbcf01b95f3604d90bb11df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abstractsensor_8h.html#a03e0e338bbcf01b95f3604d90bb11df5">operator--</a> (const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;rhs)</td></tr>
-<tr class="memdesc:a03e0e338bbcf01b95f3604d90bb11df5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classAbstractSensor.html#a7f921f96118605def806c40139f5496b" title="Deactivates the sensor, i.e. deactivates alarm strategies. ">AbstractSensor::deactivate()</a>  <a href="#a03e0e338bbcf01b95f3604d90bb11df5">More...</a><br /></td></tr>
-<tr class="separator:a03e0e338bbcf01b95f3604d90bb11df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7edf3477b3c13417667c4a6435df15c9"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abstractsensor_8h.html#a7edf3477b3c13417667c4a6435df15c9">operator++</a> (const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:a7edf3477b3c13417667c4a6435df15c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classAlarmComponent.html#ab2acf6b580efe04bd617580ecb7323f1" title="Activation of the component. ">AbstractSensor::activate()</a>  <a href="#a7edf3477b3c13417667c4a6435df15c9">More...</a><br /></td></tr>
+<tr class="separator:a7edf3477b3c13417667c4a6435df15c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae41e9a8ba67cf08df99026539a54211"><td class="memItemLeft" align="right" valign="top">const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abstractsensor_8h.html#aae41e9a8ba67cf08df99026539a54211">operator--</a> (const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;rhs)</td></tr>
+<tr class="memdesc:aae41e9a8ba67cf08df99026539a54211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Same as <a class="el" href="classAlarmComponent.html#aef44069a068e92ccd15b3afcbd06dff6" title="Deactivation of the component. ">AbstractSensor::deactivate()</a>  <a href="#aae41e9a8ba67cf08df99026539a54211">More...</a><br /></td></tr>
+<tr class="separator:aae41e9a8ba67cf08df99026539a54211"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cf071ea4ace6fbefd044549ac80b476"><td class="memItemLeft" align="right" valign="top">std::ostream &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="abstractsensor_8h.html#a3cf071ea4ace6fbefd044549ac80b476">operator&lt;&lt;</a> (std::ostream &amp;lhs, const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;rhs)</td></tr>
 <tr class="memdesc:a3cf071ea4ace6fbefd044549ac80b476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Passes info about the sensor to the output stream.  <a href="#a3cf071ea4ace6fbefd044549ac80b476">More...</a><br /></td></tr>
 <tr class="separator:a3cf071ea4ace6fbefd044549ac80b476"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -153,7 +161,7 @@ Functions</h2></td></tr>
 <dd>
 Brian Segers </dd></dl>
 </div><h2 class="groupheader">Function Documentation</h2>
-<a class="anchor" id="a37eac5a9a92f86e3d8e6f235231845ce"></a>
+<a class="anchor" id="a7edf3477b3c13417667c4a6435df15c9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -161,7 +169,7 @@ Brian Segers </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void operator++ </td>
+          <td class="memname">const std::shared_ptr&lt;<a class="el" href="classAbstractSensor.html">AbstractSensor</a>&gt;&amp; operator++ </td>
           <td>(</td>
           <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
@@ -175,12 +183,12 @@ Brian Segers </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Same as <a class="el" href="classAbstractSensor.html#a0071c6499b1538713bb46d07f0b30ca1" title="Activates the sensor, i.e. activates alarm strategies. ">AbstractSensor::activate()</a> </p>
+<p>Same as <a class="el" href="classAlarmComponent.html#ab2acf6b580efe04bd617580ecb7323f1" title="Activation of the component. ">AbstractSensor::activate()</a> </p>
 <dl class="section note"><dt>Note</dt><dd>This is an overloaded function </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a03e0e338bbcf01b95f3604d90bb11df5"></a>
+<a class="anchor" id="aae41e9a8ba67cf08df99026539a54211"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -188,7 +196,7 @@ Brian Segers </dd></dl>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void operator-- </td>
+          <td class="memname">const std::shared_ptr&lt;<a class="el" href="classAbstractSensor.html">AbstractSensor</a>&gt;&amp; operator-- </td>
           <td>(</td>
           <td class="paramtype">const std::shared_ptr&lt; <a class="el" href="classAbstractSensor.html">AbstractSensor</a> &gt; &amp;&#160;</td>
           <td class="paramname"><em>rhs</em></td><td>)</td>
@@ -202,7 +210,7 @@ Brian Segers </dd></dl>
 </table>
 </div><div class="memdoc">
 
-<p>Same as <a class="el" href="classAbstractSensor.html#a7f921f96118605def806c40139f5496b" title="Deactivates the sensor, i.e. deactivates alarm strategies. ">AbstractSensor::deactivate()</a> </p>
+<p>Same as <a class="el" href="classAlarmComponent.html#aef44069a068e92ccd15b3afcbd06dff6" title="Deactivation of the component. ">AbstractSensor::deactivate()</a> </p>
 <dl class="section note"><dt>Note</dt><dd>This is an overloaded function </dd></dl>
 
 </div>

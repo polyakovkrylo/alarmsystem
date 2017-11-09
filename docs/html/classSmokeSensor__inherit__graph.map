@@ -1,6 +1,6 @@
 <map id="SmokeSensor" name="SmokeSensor">
-<area shape="rect" id="node2" href="$classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="184,169,296,196"/>
-<area shape="rect" id="node3" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="100,95,223,121"/>
-<area shape="rect" id="node4" href="$classAlarmObservable.html" title="Observable class of observer structure. " alt="" coords="5,13,128,39"/>
-<area shape="rect" id="node6" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="247,95,390,121"/>
+<area shape="rect" id="node2" href="$classAbstractSensor.html" title="Abstract sensor class. " alt="" coords="178,169,290,196"/>
+<area shape="rect" id="node3" href="$classAlarmComponent.html" title="Base component class of composite structure. " alt="" coords="173,95,295,121"/>
+<area shape="rect" id="node4" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="5,13,148,39"/>
+<area shape="rect" id="node5" href="$classAlarmObservable.html" title="Observable class of observer structure. " alt="" coords="173,13,295,39"/>
 </map>

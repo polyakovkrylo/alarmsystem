@@ -1,3 +1,4 @@
 <map id="AlarmComponent" name="AlarmComponent">
-<area shape="rect" id="node2" href="$classAlarmObservable.html" title="Observable class of observer structure. " alt="" coords="5,13,128,39"/>
+<area shape="rect" id="node2" href="$classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. " alt="" coords="38,5,181,32"/>
+<area shape="rect" id="node3" href="$classAlarmObservable.html" title="Observable class of observer structure. " alt="" coords="48,56,171,83"/>
 </map>

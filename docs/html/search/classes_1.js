@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['motionsensor',['MotionSensor',['../classMotionSensor.html',1,'']]]
+  ['comparebytype',['compareByType',['../classcompareByType.html',1,'']]],
+  ['comparebyvendor',['compareByVendor',['../classcompareByVendor.html',1,'']]],
+  ['comparebyvendorbytype',['compareByVendorByType',['../classcompareByVendorByType.html',1,'']]]
 ];

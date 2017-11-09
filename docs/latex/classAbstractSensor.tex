@@ -32,22 +32,19 @@ Collaboration diagram for Abstract\+Sensor\+:\nopagebreak
 \item 
 \hyperlink{classAbstractSensor_a6ce9232e9b428879bcdee6591eba55e6}{Abstract\+Sensor} (std\+::string id=\char`\"{}Unknown id\char`\"{}, std\+::string type=\char`\"{}Unknown type\char`\"{}, std\+::string vendor=\char`\"{}Unknown vendor\char`\"{})
 \begin{DoxyCompactList}\small\item\em Class constructor. \end{DoxyCompactList}\item 
+virtual void \hyperlink{classAbstractSensor_a3257c4d460a482098f65bd7059b0b29a}{print\+Info} () override\hypertarget{classAbstractSensor_a3257c4d460a482098f65bd7059b0b29a}{}\label{classAbstractSensor_a3257c4d460a482098f65bd7059b0b29a}
+
+\begin{DoxyCompactList}\small\item\em Prints info about the sensor. \end{DoxyCompactList}\item 
 virtual void \hyperlink{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{update} ()=0\hypertarget{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}{}\label{classAbstractSensor_a8d0a1908c6aaf67fc7d781e54b49293b}
 
 \begin{DoxyCompactList}\small\item\em Pure virtual function to be defined in implementation class. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classAbstractSensor_a0071c6499b1538713bb46d07f0b30ca1}{activate} ()\hypertarget{classAbstractSensor_a0071c6499b1538713bb46d07f0b30ca1}{}\label{classAbstractSensor_a0071c6499b1538713bb46d07f0b30ca1}
-
-\begin{DoxyCompactList}\small\item\em Activates the sensor, i.\+e. activates alarm strategies. \end{DoxyCompactList}\item 
-virtual void \hyperlink{classAbstractSensor_a7f921f96118605def806c40139f5496b}{deactivate} ()\hypertarget{classAbstractSensor_a7f921f96118605def806c40139f5496b}{}\label{classAbstractSensor_a7f921f96118605def806c40139f5496b}
-
-\begin{DoxyCompactList}\small\item\em Deactivates the sensor, i.\+e. deactivates alarm strategies. \end{DoxyCompactList}\item 
 std\+::string \hyperlink{classAbstractSensor_a2786a5387ea8a90f8451cb3a64a3e152}{get\+Vendor} () const \hypertarget{classAbstractSensor_a2786a5387ea8a90f8451cb3a64a3e152}{}\label{classAbstractSensor_a2786a5387ea8a90f8451cb3a64a3e152}
 
 \begin{DoxyCompactList}\small\item\em Returns vendor name. \end{DoxyCompactList}\item 
 const std\+::string \hyperlink{classAbstractSensor_a31f55a2259b24f124b64a3ddd3004d6e}{get\+Type} () const \hypertarget{classAbstractSensor_a31f55a2259b24f124b64a3ddd3004d6e}{}\label{classAbstractSensor_a31f55a2259b24f124b64a3ddd3004d6e}
 
 \begin{DoxyCompactList}\small\item\em Returns type of sensor. \end{DoxyCompactList}\item 
-virtual const std\+::string \hyperlink{classAbstractSensor_a3b498785d810c29b3d20254a365adb43}{get\+Info} () const \hypertarget{classAbstractSensor_a3b498785d810c29b3d20254a365adb43}{}\label{classAbstractSensor_a3b498785d810c29b3d20254a365adb43}
+virtual const std\+::string \hyperlink{classAbstractSensor_a8ffd3cb0ec2f1740466cab60db318d4a}{get\+Info} ()\hypertarget{classAbstractSensor_a8ffd3cb0ec2f1740466cab60db318d4a}{}\label{classAbstractSensor_a8ffd3cb0ec2f1740466cab60db318d4a}
 
 \begin{DoxyCompactList}\small\item\em String stream containing info about the sensor. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}

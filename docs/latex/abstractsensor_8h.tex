@@ -24,14 +24,20 @@ This graph shows which files directly or indirectly include this file\+:\nopageb
 \begin{DoxyCompactItemize}
 \item 
 class \hyperlink{classAbstractSensor}{Abstract\+Sensor}
-\begin{DoxyCompactList}\small\item\em Abstract sensor class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Abstract sensor class. \end{DoxyCompactList}\item 
+class \hyperlink{classcompareByVendor}{compare\+By\+Vendor}
+\begin{DoxyCompactList}\small\item\em Sorting by vendor functor for Alarm\+Sensors. \end{DoxyCompactList}\item 
+class \hyperlink{classcompareByType}{compare\+By\+Type}
+\begin{DoxyCompactList}\small\item\em Sorting by type functor for Alarm\+Sensors. \end{DoxyCompactList}\item 
+class \hyperlink{classcompareByVendorByType}{compare\+By\+Vendor\+By\+Type}
+\begin{DoxyCompactList}\small\item\em Sorting by vendor by type functor for Alarm\+Sensors. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \subsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{abstractsensor_8h_a37eac5a9a92f86e3d8e6f235231845ce}{operator++} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \&rhs)
-\begin{DoxyCompactList}\small\item\em Same as \hyperlink{classAbstractSensor_a0071c6499b1538713bb46d07f0b30ca1}{Abstract\+Sensor\+::activate()} \end{DoxyCompactList}\item 
-void \hyperlink{abstractsensor_8h_a03e0e338bbcf01b95f3604d90bb11df5}{operator-\/-\/} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \&rhs)
-\begin{DoxyCompactList}\small\item\em Same as \hyperlink{classAbstractSensor_a7f921f96118605def806c40139f5496b}{Abstract\+Sensor\+::deactivate()} \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \& \hyperlink{abstractsensor_8h_a7edf3477b3c13417667c4a6435df15c9}{operator++} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Same as \hyperlink{classAlarmComponent_ab2acf6b580efe04bd617580ecb7323f1}{Abstract\+Sensor\+::activate()} \end{DoxyCompactList}\item 
+const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \& \hyperlink{abstractsensor_8h_aae41e9a8ba67cf08df99026539a54211}{operator-\/-\/} (const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \&rhs)
+\begin{DoxyCompactList}\small\item\em Same as \hyperlink{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}{Abstract\+Sensor\+::deactivate()} \end{DoxyCompactList}\item 
 std\+::ostream \& \hyperlink{abstractsensor_8h_a3cf071ea4ace6fbefd044549ac80b476}{operator$<$$<$} (std\+::ostream \&lhs, const std\+::shared\+\_\+ptr$<$ \hyperlink{classAbstractSensor}{Abstract\+Sensor} $>$ \&rhs)
 \begin{DoxyCompactList}\small\item\em Passes info about the sensor to the output stream. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
@@ -52,28 +58,28 @@ Brian Segers
 \subsection{Function Documentation}
 \index{abstractsensor.\+h@{abstractsensor.\+h}!operator++@{operator++}}
 \index{operator++@{operator++}!abstractsensor.\+h@{abstractsensor.\+h}}
-\subsubsection[{\texorpdfstring{operator++(const std\+::shared\+\_\+ptr$<$ Abstract\+Sensor $>$ \&rhs)}{operator++(const std::shared_ptr< AbstractSensor > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}void operator++ (
+\subsubsection[{\texorpdfstring{operator++(const std\+::shared\+\_\+ptr$<$ Abstract\+Sensor $>$ \&rhs)}{operator++(const std::shared_ptr< AbstractSensor > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::shared\+\_\+ptr$<${\bf Abstract\+Sensor}$>$\& operator++ (
 \begin{DoxyParamCaption}
 \item[{const std\+::shared\+\_\+ptr$<$ {\bf Abstract\+Sensor} $>$ \&}]{rhs}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{abstractsensor_8h_a37eac5a9a92f86e3d8e6f235231845ce}{}\label{abstractsensor_8h_a37eac5a9a92f86e3d8e6f235231845ce}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{abstractsensor_8h_a7edf3477b3c13417667c4a6435df15c9}{}\label{abstractsensor_8h_a7edf3477b3c13417667c4a6435df15c9}
 
 
-Same as \hyperlink{classAbstractSensor_a0071c6499b1538713bb46d07f0b30ca1}{Abstract\+Sensor\+::activate()} 
+Same as \hyperlink{classAlarmComponent_ab2acf6b580efe04bd617580ecb7323f1}{Abstract\+Sensor\+::activate()} 
 
 \begin{DoxyNote}{Note}
 This is an overloaded function 
 \end{DoxyNote}
 \index{abstractsensor.\+h@{abstractsensor.\+h}!operator-\/-\/@{operator-\/-\/}}
 \index{operator-\/-\/@{operator-\/-\/}!abstractsensor.\+h@{abstractsensor.\+h}}
-\subsubsection[{\texorpdfstring{operator-\/-\/(const std\+::shared\+\_\+ptr$<$ Abstract\+Sensor $>$ \&rhs)}{operator--(const std::shared_ptr< AbstractSensor > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}void operator-\/-\/ (
+\subsubsection[{\texorpdfstring{operator-\/-\/(const std\+::shared\+\_\+ptr$<$ Abstract\+Sensor $>$ \&rhs)}{operator--(const std::shared_ptr< AbstractSensor > &rhs)}}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::shared\+\_\+ptr$<${\bf Abstract\+Sensor}$>$\& operator-\/-\/ (
 \begin{DoxyParamCaption}
 \item[{const std\+::shared\+\_\+ptr$<$ {\bf Abstract\+Sensor} $>$ \&}]{rhs}
 \end{DoxyParamCaption}
-)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{abstractsensor_8h_a03e0e338bbcf01b95f3604d90bb11df5}{}\label{abstractsensor_8h_a03e0e338bbcf01b95f3604d90bb11df5}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{abstractsensor_8h_aae41e9a8ba67cf08df99026539a54211}{}\label{abstractsensor_8h_aae41e9a8ba67cf08df99026539a54211}
 
 
-Same as \hyperlink{classAbstractSensor_a7f921f96118605def806c40139f5496b}{Abstract\+Sensor\+::deactivate()} 
+Same as \hyperlink{classAlarmComponent_aef44069a068e92ccd15b3afcbd06dff6}{Abstract\+Sensor\+::deactivate()} 
 
 \begin{DoxyNote}{Note}
 This is an overloaded function 

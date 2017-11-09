@@ -1,7 +1,8 @@
 <map id="alarm&#45;sensor" name="alarm&#45;sensor">
-<area shape="rect" id="node1" href="dir_11e6dc7e0283bb6670d81be19983c8f4.html" title="alarm&#45;sensor" alt="" coords="77,5,175,53"/>
-<area shape="rect" id="node2" href="dir_69b1c6e8687eaaa00440cfc8519dc295.html" title="alarm&#45;strategy" alt="" coords="5,101,111,149"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000002_000003.html" title="1" alt="" coords="88,84,96,99"/>
-<area shape="rect" id="node3" href="dir_7da1ae6129c9b529e3fa91984d1ee71a.html" title="alarm&#45;composite" alt="" coords="135,101,253,149"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000002_000000.html" title="1" alt="" coords="170,74,178,89"/>
+<area shape="rect" id="node1" href="dir_11e6dc7e0283bb6670d81be19983c8f4.html" title="alarm&#45;sensor" alt="" coords="9,5,107,53"/>
+<area shape="rect" id="node2" href="dir_69b1c6e8687eaaa00440cfc8519dc295.html" title="alarm&#45;strategy" alt="" coords="5,197,111,245"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000002_000003.html" title="1" alt="" coords="47,170,55,184"/>
+<area shape="rect" id="node3" href="dir_7da1ae6129c9b529e3fa91984d1ee71a.html" title="alarm&#45;composite" alt="" coords="48,101,167,149"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000002_000000.html" title="1" alt="" coords="90,74,98,89"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000000_000003.html" title="1" alt="" coords="82,178,90,192"/>
 </map>

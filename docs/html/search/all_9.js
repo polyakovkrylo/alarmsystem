@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['remove',['remove',['../classAlarmComponentGroup.html#a4e6c27c533e73d95fe622ca8ed89a9ae',1,'AlarmComponentGroup']]],
-  ['removeobserver',['removeObserver',['../classAlarmObservable.html#a76733a3271e053f105c428f3d878aa7e',1,'AlarmObservable']]],
-  ['removestrategy',['removeStrategy',['../classAlarmStrategyOwner.html#a50ca40d662757f37fdb17194fdbb165a',1,'AlarmStrategyOwner']]]
+  ['parent_5f',['parent_',['../classAlarmComponent.html#a6d7ef82bfe60f4d31e5f340139ccff1b',1,'AlarmComponent']]],
+  ['printinfo',['printInfo',['../classAlarmComponent.html#a51a7a6e0d85da344c741deddfcb7cff3',1,'AlarmComponent::printInfo()'],['../classAlarmComponentGroup.html#a07b07cb3f5b41360e3aaf83b9d0938b1',1,'AlarmComponentGroup::printInfo()'],['../classAbstractSensor.html#a3257c4d460a482098f65bd7059b0b29a',1,'AbstractSensor::printInfo()']]]
 ];

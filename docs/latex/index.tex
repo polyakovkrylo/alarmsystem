@@ -1,0 +1,75 @@
+\subsection*{Description}
+
+This is the Alarm System implementation for Lab 2 of Media Processing course. Following diagram represents the model of the system divided into packages. Each package reprsesents separate module.
+
+\subsubsection*{Main class diagram\+:}
+
+
+
+\subsection*{Documentation}
+
+Doxygen generated documentation is available in docs/html/index.\+html
+
+\subsection*{Project structure}
+
+\subsubsection*{Alarm\+Sensors}
+
+Alarm\+Sensors group is located in {\ttfamily alarm-\/sensor} directory and includes sensor classes, i.\+e. {\ttfamily \hyperlink{classAbstractSensor}{Abstract\+Sensor}} class, which defines common attributes and operations and its different implementation, for instance, {\ttfamily \hyperlink{classSmokeSensor}{Smoke\+Sensor}} class. Whenever new sensor class is created it is sufficient that this class should be inherited from {\ttfamily \hyperlink{classAbstractSensor}{Abstract\+Sensor}} class, and {\ttfamily update()} function should be defined.
+
+Here is the class diagram of Alarm\+Sensors package\+:
+
+
+
+\subsubsection*{Alarm\+Composite}
+
+Alarm\+Composite group is an implementation of composite pattern. It is located in {\ttfamily alarm-\/composite} directory. It includes base component class {\ttfamily \hyperlink{classAlarmComponent}{Alarm\+Component}} and its successor class {\ttfamily \hyperlink{classAlarmComponentGroup}{Alarm\+Component\+Group}}. Leaf implementation {\ttfamily \hyperlink{classAbstractSensor}{Abstract\+Sensor}} is a part of Alarm\+Sensors group.
+
+Here is the class diagram of Alarm\+Composite package\+:
+
+
+
+\subsubsection*{\hyperlink{classAlarmObserver}{Alarm\+Observer}}
+
+\hyperlink{classAlarmObserver}{Alarm\+Observer} group is located in {\ttfamily alarm-\/observer}. It includes {\ttfamily \hyperlink{classAlarmObservable}{Alarm\+Observable}} class, which is a base for any actual implementation of observable objects. The only difference between Observer and Strategy here is that Observer can handle a message coming from observable, when Strategy can only be activated/deactivated by strategy owner. Observer is implemented in {\ttfamily \hyperlink{classAlarmObserver}{Alarm\+Observer}} class. In order to create new alarm strategy, one must inherit it from {\ttfamily \hyperlink{classAlarmObserver}{Alarm\+Observer}} base class and optionally redefine {\ttfamily handle function}.
+
+Here is the class diagram of \hyperlink{classAlarmObserver}{Alarm\+Observer} package\+:
+
+
+
+\subsubsection*{Alarm\+Strategies}
+
+Alarm\+Strategies group is located in {\ttfamily alarm-\/strategy}. It includes {\ttfamily \hyperlink{classAlarmStrategy}{Alarm\+Strategy}} class, which is a base for any actual implementation of strategy. Context is implemented in {\ttfamily \hyperlink{classAlarmStrategyOwner}{Alarm\+Strategy\+Owner}} class. In order to create new alarm strategy, one must inherit it from {\ttfamily \hyperlink{classAlarmStrategy}{Alarm\+Strategy}} base class.
+
+Here is the class diagram of Alarm\+Strategies package\+:
+
+
+
+\subsection*{T\+O\+DO}
+
+
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Implement Composite structure (classes \hyperlink{classAlarmComponent}{Alarm\+Component}, \hyperlink{classAlarmComponentGroup}{Alarm\+Component\+Group})
+\item \mbox{[}x\mbox{]} Implement Strategy structure ( classes \hyperlink{classAlarmStrategy}{Alarm\+Strategy} and \hyperlink{classAlarmStrategyOwner}{Alarm\+Strategy\+Owner})
+\item \mbox{[}x\mbox{]} Implement Alarm\+Sensor class
+\item \mbox{[}x\mbox{]} Implement \hyperlink{classAlarmStrategy}{Alarm\+Strategy} successors
+\item \mbox{[}x\mbox{]} Implement Alarm\+Sensor successors
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Implement \hyperlink{classSmokeSensor}{Smoke\+Sensor}
+\item \mbox{[}x\mbox{]} Implement \hyperlink{classMotionSensor}{Motion\+Sensor}
+\item \mbox{[}x\mbox{]} Implement \hyperlink{classToxicSensor}{Toxic\+Sensor}
+\end{DoxyItemize}
+\item \mbox{[}x\mbox{]} Create documentation
+\item \mbox{[}x\mbox{]} Reorganize project structure
+\item \mbox{[}x\mbox{]} Implement operators
+\begin{DoxyItemize}
+\item \mbox{[}x\mbox{]} Implement operator++
+\item \mbox{[}x\mbox{]} Implement operator-\/-\/
+\item \mbox{[}x\mbox{]} Implement operator$<$$<$ for each type of sensor
+\end{DoxyItemize}
+\item \mbox{[}x\mbox{]} Add activation flag to \hyperlink{classAlarmComponent}{Alarm\+Component} and activation counter to \hyperlink{classAlarmStrategy}{Alarm\+Strategy}
+\item \mbox{[}x\mbox{]} Parent attribute for \hyperlink{classAlarmComponent}{Alarm\+Component}
+\item \mbox{[}x\mbox{]} Implement Observer structure
+\item \mbox{[}x\mbox{]} Sorting and search algorithms
+\item \mbox{[}x\mbox{]} Add model to the project
+\item \mbox{[}x\mbox{]} Move sources to separate folder 
+\end{DoxyItemize}

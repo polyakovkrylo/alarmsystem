@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.11"/>
-<title>Alarm Sytem: Main Page</title>
+<title>Alarm Sytem: Alarm system</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -38,7 +38,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li class="current"><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="modules.html"><span>Modules</span></a></li>
       <li><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -77,10 +76,70 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div class="header">
   <div class="headertitle">
-<div class="title">Alarm Sytem Documentation</div>  </div>
+<div class="title">Alarm system </div>  </div>
 </div><!--header-->
 <div class="contents">
-</div><!-- contents -->
+<div class="textblock"><h2>Description</h2>
+<p>This is the Alarm System implementation for Lab 2 of Media Processing course. Following diagram represents the model of the system divided into packages. Each package reprsesents separate module.</p>
+<h3>Main class diagram:</h3>
+<div class="image">
+<img src="uml/alarmsystem/Main.png"  alt="img def"/>
+</div>
+<h2>Documentation</h2>
+<p>Doxygen generated documentation is available in docs/html/index.html</p>
+<h2>Project structure</h2>
+<h3>AlarmSensors</h3>
+<p>AlarmSensors group is located in <code>alarm-sensor</code> directory and includes sensor classes, i.e. <code><a class="el" href="classAbstractSensor.html" title="Abstract sensor class. ">AbstractSensor</a></code> class, which defines common attributes and operations and its different implementation, for instance, <code><a class="el" href="classSmokeSensor.html" title="Smoke sensor class. ">SmokeSensor</a></code> class. Whenever new sensor class is created it is sufficient that this class should be inherited from <code><a class="el" href="classAbstractSensor.html" title="Abstract sensor class. ">AbstractSensor</a></code> class, and <code>update()</code> function should be defined.</p>
+<p>Here is the class diagram of AlarmSensors package:</p>
+<div class="image">
+<img src="uml/alarmsystem/AlarmSensor/AlarmSensor.png"  alt="img def"/>
+</div>
+<h3>AlarmComposite</h3>
+<p>AlarmComposite group is an implementation of composite pattern. It is located in <code>alarm-composite</code> directory. It includes base component class <code><a class="el" href="classAlarmComponent.html" title="Base component class of composite structure. ">AlarmComponent</a></code> and its successor class <code><a class="el" href="classAlarmComponentGroup.html" title="Group component class of composite structure. ">AlarmComponentGroup</a></code>. Leaf implementation <code><a class="el" href="classAbstractSensor.html" title="Abstract sensor class. ">AbstractSensor</a></code> is a part of AlarmSensors group.</p>
+<p>Here is the class diagram of AlarmComposite package:</p>
+<div class="image">
+<img src="uml/alarmsystem/AlarmComposite/AlarmComposite.png"  alt="img def"/>
+</div>
+<h3><a class="el" href="classAlarmObserver.html" title="Observer class of observer structure. ">AlarmObserver</a></h3>
+<p><a class="el" href="classAlarmObserver.html" title="Observer class of observer structure. ">AlarmObserver</a> group is located in <code>alarm-observer</code>. It includes <code><a class="el" href="classAlarmObservable.html" title="Observable class of observer structure. ">AlarmObservable</a></code> class, which is a base for any actual implementation of observable objects. The only difference between Observer and Strategy here is that Observer can handle a message coming from observable, when Strategy can only be activated/deactivated by strategy owner. Observer is implemented in <code><a class="el" href="classAlarmObserver.html" title="Observer class of observer structure. ">AlarmObserver</a></code> class. In order to create new alarm strategy, one must inherit it from <code><a class="el" href="classAlarmObserver.html" title="Observer class of observer structure. ">AlarmObserver</a></code> base class and optionally redefine <code>handle function</code>.</p>
+<p>Here is the class diagram of <a class="el" href="classAlarmObserver.html" title="Observer class of observer structure. ">AlarmObserver</a> package:</p>
+<div class="image">
+<img src="uml/alarmsystem/AlarmObservable/AlarmObservable.png"  alt="img def"/>
+</div>
+<h3>AlarmStrategies</h3>
+<p>AlarmStrategies group is located in <code>alarm-strategy</code>. It includes <code><a class="el" href="classAlarmStrategy.html" title="Strategy class implementation of strategy pattern. ">AlarmStrategy</a></code> class, which is a base for any actual implementation of strategy. Context is implemented in <code><a class="el" href="classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. ">AlarmStrategyOwner</a></code> class. In order to create new alarm strategy, one must inherit it from <code><a class="el" href="classAlarmStrategy.html" title="Strategy class implementation of strategy pattern. ">AlarmStrategy</a></code> base class.</p>
+<p>Here is the class diagram of AlarmStrategies package:</p>
+<div class="image">
+<img src="uml/alarmsystem/AlarmStrategy/AlarmStrategy.png"  alt="img def"/>
+</div>
+<h2>TODO</h2>
+<ul>
+<li>[x] Implement Composite structure (classes <a class="el" href="classAlarmComponent.html" title="Base component class of composite structure. ">AlarmComponent</a>, <a class="el" href="classAlarmComponentGroup.html" title="Group component class of composite structure. ">AlarmComponentGroup</a>)</li>
+<li>[x] Implement Strategy structure ( classes <a class="el" href="classAlarmStrategy.html" title="Strategy class implementation of strategy pattern. ">AlarmStrategy</a> and <a class="el" href="classAlarmStrategyOwner.html" title="Context class implementation of strategy pattern. ">AlarmStrategyOwner</a>)</li>
+<li>[x] Implement AlarmSensor class</li>
+<li>[x] Implement <a class="el" href="classAlarmStrategy.html" title="Strategy class implementation of strategy pattern. ">AlarmStrategy</a> successors</li>
+<li>[x] Implement AlarmSensor successors<ul>
+<li>[x] Implement <a class="el" href="classSmokeSensor.html" title="Smoke sensor class. ">SmokeSensor</a></li>
+<li>[x] Implement <a class="el" href="classMotionSensor.html" title="Motion sensor class. ">MotionSensor</a></li>
+<li>[x] Implement <a class="el" href="classToxicSensor.html" title="Toxic sensor class Dummy implementation of toxic sensor component. Intended for testing purposes...">ToxicSensor</a></li>
+</ul>
+</li>
+<li>[x] Create documentation</li>
+<li>[x] Reorganize project structure</li>
+<li>[x] Implement operators<ul>
+<li>[x] Implement operator++</li>
+<li>[x] Implement operator--</li>
+<li>[x] Implement operator&lt;&lt; for each type of sensor</li>
+</ul>
+</li>
+<li>[x] Add activation flag to <a class="el" href="classAlarmComponent.html" title="Base component class of composite structure. ">AlarmComponent</a> and activation counter to <a class="el" href="classAlarmStrategy.html" title="Strategy class implementation of strategy pattern. ">AlarmStrategy</a></li>
+<li>[x] Parent attribute for <a class="el" href="classAlarmComponent.html" title="Base component class of composite structure. ">AlarmComponent</a></li>
+<li>[x] Implement Observer structure</li>
+<li>[x] Sorting and search algorithms</li>
+<li>[x] Add model to the project</li>
+<li>[x] Move sources to separate folder </li>
+</ul>
+</div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

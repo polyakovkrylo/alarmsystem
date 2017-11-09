@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['toxicsensor',['ToxicSensor',['../classToxicSensor.html',1,'']]]
+  ['smokesensor',['SmokeSensor',['../classSmokeSensor.html',1,'']]]
 ];
