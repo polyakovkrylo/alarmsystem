@@ -18,6 +18,7 @@
 #include <sstream>
 
 #include "alarm-observer/alarmobservable.h"
+#include "alarm-strategy/alarmstrategyowner.h"
 
 /*!
  * \defgroup AlarmComposite
@@ -33,7 +34,10 @@
  *
  * \brief Base component class of composite structure
  */
-class AlarmComponent : public AlarmObservable, public std::enable_shared_from_this<AlarmComponent>
+class AlarmComponent :
+        public AlarmStrategyOwner,
+        public AlarmObservable,
+        public std::enable_shared_from_this<AlarmComponent>
 {
 public:
     typedef std::shared_ptr<AlarmComponent> SPtr;

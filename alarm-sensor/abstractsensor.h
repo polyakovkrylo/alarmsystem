@@ -45,7 +45,7 @@
  * to redefine pure virtual method update()
  */
 
-class AbstractSensor : public AlarmComponent, public AlarmStrategyOwner
+class AbstractSensor : public AlarmComponent
 {
 public:
     /*!
@@ -69,15 +69,6 @@ public:
      * \brief Pure virtual function to be defined in implementation class
      */
     virtual void update() = 0;
-
-    /*!
-     * \brief Activates the sensor, i.e. activates alarm strategies
-     */
-    virtual void activate();
-    /*!
-     * \brief Deactivates the sensor, i.e. deactivates alarm strategies
-     */
-    virtual void deactivate();
 
     /*!
      * \brief Returns vendor name

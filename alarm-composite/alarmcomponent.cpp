@@ -32,6 +32,8 @@ void AlarmComponent::activate()
     if(!activated_) {
         activated_ = true;
         cout << id_  << " activated" << endl;
+        // Activate strategies
+        activateStrategies();
         // Add information about the root component
         // and notify observers
         stringstream msg;
@@ -45,9 +47,9 @@ void AlarmComponent::deactivate()
 {
     if(activated_){
         activated_ = false;
-
         cout << id_  << " deactivated" << endl;
-
+        // Deactivate strategies
+        deactivateStrategies();
         // Add information about the root component
         // and notify observers
         stringstream msg;

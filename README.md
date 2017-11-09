@@ -59,4 +59,6 @@ strategy. Context is implemented in
 to AlarmStrategy
 * [x] Parent attribute for AlarmComponent
 * [x] Implement Observer structure
-* [ ] Sorting and search algorithms
+* [x] Sorting and search algorithms
+* [ ] Add model to the project
+* [ ] Move sources to separate folder

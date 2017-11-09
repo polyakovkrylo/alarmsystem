@@ -34,25 +34,6 @@ void AbstractSensor::printInfo()
     cout << getInfo() << endl;
 }
 
-void AbstractSensor::activate()
-{
-    // print sensor's info and activate strategies
-    // TODO: Redundancy of same if{} inside AlarmComponent
-    if(!activated_){
-        AlarmComponent::activate();
-        activateStrategies();
-    }
-}
-
-void AbstractSensor::deactivate()
-{
-    // TODO: Redundancy of same if{} inside AlarmComponent
-    if(activated_){
-        AlarmComponent::deactivate();
-        deactivateStrategies();
-    }
-}
-
 const string AbstractSensor::getInfo()
 {
     stringstream result;
