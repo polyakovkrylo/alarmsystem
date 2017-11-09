@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['motionsensor',['MotionSensor',['../classMotionSensor.html#a411baafe617c6e11c10aaa0e1ec6a9f4',1,'MotionSensor']]]
+  ['motionsensor',['MotionSensor',['../classMotionSensor.html#a993abd23e077285aefbda869d8c26aea',1,'MotionSensor']]]
 ];
