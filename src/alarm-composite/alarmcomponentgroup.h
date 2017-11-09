@@ -31,7 +31,7 @@ public:
      * \brief Class constructor
      * \param id identificator of the component
      */
-    explicit AlarmComponentGroup(std::string id = "unknown group");
+    explicit AlarmComponentGroup(const std::string &id = "unknown group");
     virtual ~AlarmComponentGroup() override;
 
     /*!

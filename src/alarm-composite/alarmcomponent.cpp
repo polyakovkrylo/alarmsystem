@@ -16,7 +16,7 @@ using std::endl;
 using std::string;
 using std::stringstream;
 
-AlarmComponent::AlarmComponent(string id) :
+AlarmComponent::AlarmComponent(const string &id) :
     id_{id}, parent_{nullptr}, activated_{false}
 {
 

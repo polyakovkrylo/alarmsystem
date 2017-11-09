@@ -45,7 +45,7 @@ public:
      * \brief Class constructor
      * \param id identificator of the component
      */
-    explicit AlarmComponent(std::string id);
+    explicit AlarmComponent(const std::string &id);
     virtual ~AlarmComponent();
 
 public:

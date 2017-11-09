@@ -17,7 +17,7 @@ using std::string;
 using std::shared_ptr;
 using std::list;
 
-AlarmComponentGroup::AlarmComponentGroup(string id) :
+AlarmComponentGroup::AlarmComponentGroup(const string &id) :
     AlarmComponent(id)
 {
 
