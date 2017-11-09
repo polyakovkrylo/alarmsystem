@@ -69,7 +69,13 @@ public:
      */
     void remove(const SPtr &sptr);
 
-    const std::list<SPtr> getSensors();
+    /*!
+     * \brief Returns list of leaf components
+     *
+     * Returns list of leaf components in group
+     * and all its subgroups
+     */
+    const std::list<SPtr> getLeafComponents();
 
 
 private:

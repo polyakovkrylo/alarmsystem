@@ -70,7 +70,7 @@ void AlarmComponentGroup::remove(const AlarmComponent::SPtr &sptr)
     children_.remove(sptr);
 }
 
-const list<AlarmComponent::SPtr> AlarmComponentGroup::getSensors()
+const list<AlarmComponent::SPtr> AlarmComponentGroup::getLeafComponents()
 {
     list<SPtr> result;
     for(SPtr comp : children_) {
@@ -80,7 +80,7 @@ const list<AlarmComponent::SPtr> AlarmComponentGroup::getSensors()
             // Cast failed
             result.push_back(comp);
         }else{
-            list<SPtr> gres = group->getSensors();
+            list<SPtr> gres = group->getLeafComponents();
             result.splice(result.end(), gres);
         }
     }

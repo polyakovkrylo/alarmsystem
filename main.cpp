@@ -116,9 +116,9 @@ int main()
     cout<<endl;
     cout << toxic1;
 
-    cout << "Testing getSensors() ..." << endl;
+    cout << "Testing getLeafComponents() ..." << endl;
 
-    list<AlarmComponent::SPtr> sortedlist = building->getSensors();
+    list<AlarmComponent::SPtr> sortedlist = building->getLeafComponents();
     sortedlist.sort(compareByVendorByType());
 //  Other option is to use lambda
 //    sortedlist.sort(
