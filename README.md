@@ -61,4 +61,4 @@ to AlarmStrategy
 * [x] Implement Observer structure
 * [x] Sorting and search algorithms
 * [x] Add model to the project
-* [ ] Move sources to separate folder
+* [x] Move sources to separate folder
