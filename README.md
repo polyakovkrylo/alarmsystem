@@ -50,10 +50,13 @@ Here is the class diagram of AlarmComposite package:
 AlarmObserver group is located in
 `alarm-observer`. It includes `AlarmObservable` class,
 which is a base for any actual implementation of
-observable objects.  The only difference between Observer and Strategy here is that Observer can handle a message coming from observable, when Strategy can only be activated/deactivated by strategy owner. Observer is implemented in
- `AlarmObserver` class. In order to create new
- alarm strategy, one must inherit it from
- `AlarmObserver` base class and optionally redefine `handle function`.
+observable objects.  There are two major differences between  Observer and
+Strategy. Firstly, Observer can handle a message coming from Observable,
+when Strategy can only be activated/deactivated by strategy owner.
+Besides, Observer passes the message to its parent, allowing to notify the
+Observer of the complete Component group. Observer is implemented in
+`AlarmObserver` class. In order to create new alarm observer, one must inherit
+it from `AlarmObserver` base class and optionally redefine `handle` function.
 
  Here is the class diagram of AlarmObserver package:
 
