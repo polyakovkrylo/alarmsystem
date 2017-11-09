@@ -40,10 +40,19 @@ public:
      * \brief Trigger the strategy execution
      */
     virtual void activate();
+
     /*!
      * \brief Deactivate the strategy execution
      */
     virtual void deactivate();
+
+    /*!
+     * \brief Number of activation times
+     *
+     * Returns number of times the strategy
+     * has been currently activated
+     */
+    const int & activated();
 
 private:
     /*!

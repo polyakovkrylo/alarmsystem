@@ -46,3 +46,8 @@ void AlarmStrategy::deactivate()
     }
 }
 
+const int & AlarmStrategy::activated()
+{
+    return activatedCount_;
+}
+
