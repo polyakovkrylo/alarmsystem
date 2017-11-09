@@ -35,6 +35,12 @@ HEADERS += \
 
 DISTFILES += \
     README.md \
+    uml/alarmsystem.asta \
+    uml/alarmsystem/AlarmComposite/AlarmComposite.png \
+    uml/alarmsystem/AlarmSensor/AlarmSensor.png \
+    uml/alarmsystem/AlarmObservable/AlarmObservable.png \
+    uml/alarmsystem/AlarmStrategy/AlarmStrategy.png \
+    uml/alarmsystem/Main.png \
     docs/html/search/all_0.js \
     docs/html/search/all_1.js \
     docs/html/search/all_2.js \
