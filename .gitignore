@@ -74,4 +74,4 @@ Thumbs.db
 # Build directory
 #----------------
 *build*/
-
+lib/

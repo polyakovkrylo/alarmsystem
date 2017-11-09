@@ -1,9 +1,9 @@
-TEMPLATE = app
-CONFIG += console c++14
+TEMPLATE = lib
+CONFIG += console c++14 static
 CONFIG -= app_bundle
 CONFIG -= qt
 
-SOURCES += main.cpp \
+SOURCES += \
     alarm-composite/alarmcomponent.cpp \
     alarm-composite/alarmcomponentgroup.cpp \
     alarm-sensor/abstractsensor.cpp \
@@ -30,3 +30,8 @@ HEADERS += \
     alarm-observer/alarmobserver.h \
     alarm-strategy/waterdispenser.h \
     alarm-strategy/alarmsignal.h
+
+linux-g++ {
+  target.path = $${PWD}/../lib
+  INSTALLS += target
+}
