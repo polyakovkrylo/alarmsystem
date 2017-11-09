@@ -17,7 +17,7 @@ using std::string;
 using std::stringstream;
 using std::shared_ptr;
 
-SmokeSensor::SmokeSensor(int threshold, std::string id, std::string vendor) :
+SmokeSensor::SmokeSensor(std::string id, std::string vendor, int threshold) :
     AbstractSensor(id, "Smoke sensor", vendor), threshold_{threshold}
 {
 

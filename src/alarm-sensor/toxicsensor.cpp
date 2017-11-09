@@ -17,8 +17,8 @@ using std::ostream;
 using std::shared_ptr;
 using std::endl;
 
-ToxicSensor::ToxicSensor(GasType gas, int threshold,
-                         string id, string vendor) :
+ToxicSensor::ToxicSensor(string id, string vendor,
+                         int threshold, GasType gas) :
     AbstractSensor(id, "Toxic sensor", vendor),
     gasType_{gas}, threshold_{threshold}
 {

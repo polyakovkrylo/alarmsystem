@@ -34,9 +34,9 @@ public:
      * \param id identificator of the sensor
      * \param vendor vendor name
      */
-    SmokeSensor(int threshold = 20,
-                std::string id = "Unkown id",
-                std::string vendor = "Unkown vendor");
+    SmokeSensor(std::string id = "Unkown id",
+                std::string vendor = "Unkown vendor",
+                int threshold = 20);
 
     virtual ~SmokeSensor() override;
 

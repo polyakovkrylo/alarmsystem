@@ -17,8 +17,8 @@ using std::ostream;
 using std::endl;
 using std::shared_ptr;
 
-MotionSensor::MotionSensor(int minDistance, int maxDistance,
-                           string id, string vendor) :
+MotionSensor::MotionSensor(string id, string vendor,
+                           int minDistance, int maxDistance) :
     AbstractSensor(id, "Motion sensor", vendor),
     minDistance_{minDistance}, maxDistance_{maxDistance}
 {

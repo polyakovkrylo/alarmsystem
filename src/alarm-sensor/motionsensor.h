@@ -35,10 +35,10 @@ public:
      * \param id identificator of the sensor
      * \param vendor vendor name
      */
-    MotionSensor(int minDistance = 0,
-                 int maxDistance = 20,
-                 std::string id = "Unkown id",
-                 std::string vendor = "Unkown vendor");
+    MotionSensor(std::string id = "Unkown id",
+                 std::string vendor = "Unkown vendor",
+                 int minDistance = 0,
+                 int maxDistance = 20);
 
     virtual ~MotionSensor() override;
 

@@ -47,10 +47,9 @@ public:
      * \param id identificator of the sensor
      * \param vendor vendor name
      */
-    ToxicSensor(GasType gas = Chlorine,
-                int threshold = 20,
-                std::string id = "Unkown id",
-                std::string vendor = "Unkown vendor");
+    ToxicSensor(std::string id = "Unkown id",
+                std::string vendor = "Unkown vendor",
+                int threshold = 20, GasType gas = Chlorine);
 
     virtual ~ToxicSensor() override;
 
